@@ -1,0 +1,286 @@
+=== 2017-02-03 10:14:25 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php6104.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:15:33 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php67C7.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:16:29 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php442E.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:17:47 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php7339.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:20:08 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php9B3A.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:20:12 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => maps.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpAABC.tmp
+            [error] => 0
+            [size] => 626897
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:24:29 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php94C1.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:25:00 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpED4.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:25:52 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpD8FB.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 10:26:01 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => logo2.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\phpFD6C.tmp
+            [error] => 0
+            [size] => 7117
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-03 14:15:22 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => pexels-photo-165907.jpeg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpE592.tmp
+            [error] => 0
+            [size] => 22626
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-11 09:59:18 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => image_2017-02-03_20-57-20.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php301F.tmp
+            [error] => 0
+            [size] => 777835
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-02-11 13:10:38 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => image_2017-02-03_20-57-20.png
+            [type] => image/png
+            [tmp_name] => C:\xampp\tmp\php5D96.tmp
+            [error] => 0
+            [size] => 777835
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+

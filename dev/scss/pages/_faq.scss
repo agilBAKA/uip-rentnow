@@ -1,0 +1,43 @@
+.box-faq {
+	padding: 20px 0px;
+	.list-faq {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+	 	.title-faq {
+			position: relative;
+			cursor: pointer;
+			padding-left: 20px;
+	 		i {
+				font-size: 24px;
+				color: $color-primary;
+				position: absolute;
+				left: 0;
+				top: -5px;
+				transition: all 0.3s;
+	 		}
+
+	 		h4 {
+	 			margin-bottom: 0px;
+	 		}
+
+	 		&.in-active {
+	 			i {
+	 				transform: rotate(90deg); 
+	 			}
+	 		}
+		}
+
+		.content-faq {
+			opacity: 0;
+			max-height: 0px;
+			transition: all 0.3s;
+
+			&.content-show {
+				padding-top: 20px;
+				opacity: 1;
+				max-height: 10000px;
+			}
+		}
+	}
+}

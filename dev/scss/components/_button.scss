@@ -1,0 +1,81 @@
+.btn {
+	border: none;
+	padding: 18px 20px;
+	border-radius: 4px;
+	display: inline-block;
+	font-family: $font-base;
+	cursor:pointer;
+	background: transparent;
+	&.full {
+		width: 100%;
+		text-align: center;
+	}
+	&:focus {
+		outline: none;
+	}
+
+	i {
+		padding-left: 10px;
+		font-weight: bold;
+	}
+
+}
+
+.btn-primary {
+	@extend .btn;
+	background: $color-primary;
+	color: $color-soft;
+	&:hover {
+		background:darken($color-primary, 8%);
+		color: $color-soft;
+	}
+}
+
+.btn-secondary {
+	@extend .btn;
+	background: $color-secondary;
+	color: $color-dark;
+	font-weight: 600;
+	box-shadow: 0px 2px 6px -1px rgba(255, 87, 34, 0.56);
+    border: 1px solid rgba(244, 113, 54, 0.19);
+	&:hover {
+		background:#ffeb3b;
+		color: $color-dark;
+	}
+}
+
+
+.btn-black {
+	@extend .btn;
+	background: #333333;
+	color: $color-soft;
+	&:hover {
+		background:darken(#333333, 8%);
+	}
+}
+
+ 
+.btn-primary-o {
+	@extend .btn;
+	border:1px solid $color-primary;
+	color: $color-primary;
+	&:hover {
+		background:$color-primary;
+		color: $color-soft;
+	}
+}
+
+.btn-white-o {
+	@extend .btn;
+	border:1px solid #fff;
+	color: #fff;
+	&:hover {
+		background:#ffffff;
+		color: $color-dark;
+	}
+}
+
+.btn-small {
+	padding: 7px 15px !important; 
+}
+

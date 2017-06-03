@@ -1,0 +1,65 @@
+.section-stories {
+	.btn-primary-o {
+		margin: 60px auto 0px ;
+		text-align: center;
+		display: block;
+	}
+
+	.list-stories {
+		border-bottom: 1px solid $color-primary;
+		width: 100%;
+		margin-top: 60px;
+		h3 {
+			margin-bottom: 30px;
+		}
+
+		figure.cover-stories {
+			max-width: 750px;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 40px 40px 0px 0px;
+			height: 300px;
+			overflow: hidden;
+		}
+
+		.box-stories {
+			padding-left:80px;
+
+			a.link-stories {
+				font-size:21px;
+			}
+
+			p {
+				padding: 20px 0px 10px 0px;
+			}
+		}
+	}
+
+	@include respond-to(handhelds) {
+		.list-stories {
+			margin-top: 20px;
+			figure.cover-stories {
+				max-width: 750px;
+				width: 100%;
+				overflow: hidden;
+				border-radius: 10px 10px 0px 0px;
+				height: auto;
+				overflow: hidden;
+				margin-bottom: 20px;
+			}
+
+			.box-stories {
+				padding-left:0px;
+ 				padding-bottom: 20px;
+				p {
+					padding: 20px 0px 10px 0px;
+				}
+			}
+		}
+
+		.btn-big {
+			margin-top: 30px;
+			width: 100%;
+		}
+	}
+}

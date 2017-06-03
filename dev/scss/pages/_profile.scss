@@ -1,0 +1,502 @@
+
+.section-profile {
+ 
+	header.header-profile {
+		border-bottom: 1px solid $color-grey;
+		overflow: hidden;
+		margin-bottom:40px;
+		.big-avatar {
+			float: left;
+			width: 310px;
+			height: 310px;
+			img {
+				border-radius: 40px 40px 0px 0px;
+			}
+		}
+
+		.header-content {
+			float: left;
+			max-width: 470px;
+			margin-left: 100px;
+
+			h1 {
+				font-size: 38px;
+			}
+			span {
+				display: inline-block;
+				font-weight: 600;
+				padding-top: 20px;
+				color: $color-grey;
+			}
+			p {
+				padding-top: 30px;
+				font-weight: 500;
+				color: $color-dark;
+			}
+
+			.wallet {
+				font-size: 24px;
+				position: relative;
+				label {
+					position: relative;
+					top: 5px;
+				}
+				.box-balance {
+					background: $color-primary;
+					display: inline-block;
+					color: #ffffff;
+					border-radius: 100px;
+					padding:10px 25px;
+					float: right;
+				}
+				button {
+					float: right;
+					font-size: 28px;
+					background: transparent;
+					border: 0;
+					color: $color-primary;
+					padding-left: 10px;
+					position: relative;
+					top: 5px;
+					cursor: pointer;
+					&:focus {
+						outline: none;
+					}
+				}
+
+			}
+		}
+	}
+
+	h2 {
+		font-size: 16px;
+		font-weight: 700;
+		color: $color-primary;
+		border-bottom: 1px solid $color-primary;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+	}
+
+	.box-verifications {
+		ul {
+			li {
+				position: relative;
+				max-width: 200px;
+				padding-bottom: 20px;
+				label {
+					font-size: 16px;
+					font-weight: 700;
+					display: block;
+				}
+
+				span {
+					padding-top: 7px;
+					display: block;
+					font-weight: 500;
+					color: #c1c0c7;
+				}
+
+				i.done {
+					width: 23px;
+					height: 23px;
+					position: absolute;
+					top: 0px;
+					right: 0px;
+					border-radius: 100%;
+					border: 2px solid #00aa00;
+					display: block;
+					&:after {
+						content: '';
+					    width: 2px;
+					    height: 5px;
+					    background: #00aa00;
+					    position: absolute;
+					    left: 5px;
+					    top: 8px;
+					    transform: rotate(-26deg);
+					}
+					&:before {
+						content: '';
+					    width: 10px;
+					    height: 2px;
+					    background: #00aa00;
+					    position: absolute;
+					    left: 6px;
+					    top: 9px;
+					    transform: rotate(-26deg);
+					}
+					
+				}
+			}
+		}
+
+		a {
+			color: $color-primary;
+			font-style: italic;
+			font-weight: 400;
+			&:hover {
+				color: $color-dark;
+			}
+		}
+	}
+
+	.content-profile {
+		overflow: hidden;
+		padding-bottom: 30px;
+	}
+
+	@include respond-to(handhelds) {
+		header.header-profile {
+			border-bottom: 1px solid $color-grey;
+			overflow: hidden;
+			margin-bottom:40px;
+			.big-avatar {
+				float: inherit;
+				width: 280px;
+				height: 280px;
+				margin: 0 auto;
+				img {
+					border-radius: 20px 20px 0px 0px;
+				}
+			}
+
+			.header-content {
+				float: inherit;
+				width: 100%;
+				margin-left: 0px;
+				padding-top: 20px;
+				text-align: center;
+		
+				h1 {
+					font-size: 24px;
+					margin-bottom: 15px;
+				}
+				span {
+					display: block;
+					font-weight: 600;
+					padding-top: 10px;
+					color: $color-grey;
+				}
+				p {
+					padding-top: 30px;
+					font-weight: 500;
+					color: $color-dark;
+				}
+
+				.wallet {
+					text-align: left;
+					padding-bottom: 20px;
+  					label {
+						position: relative;
+						top: 5px;
+					}
+					.box-balance {
+						 display: block;
+						 margin-top: 20px;
+						 float: inherit;
+						 text-align: center;
+					}
+					button {
+						float: right;
+						font-size: 28px;
+						background: transparent;
+						border: 0;
+						color: $color-primary;
+						padding-left: 10px;
+						position: relative;
+						top: 5px;
+						cursor: pointer;
+						&:focus {
+							outline: none;
+						}
+					}
+
+				}
+			}
+		}
+		.box-verifications {
+			margin-bottom: 30px;
+			ul {
+				li {
+					max-width: 100%;
+				}
+			}
+
+			a {
+				color: $color-primary;
+				font-style: italic;
+				font-weight: 400;
+				&:hover {
+					color: $color-dark;
+				}
+			}
+		}
+
+		.content-setting {
+			padding-bottom: 40px;
+		} 
+
+		.deactive-account {
+			padding-top: 40px;
+		}
+
+	}
+}
+
+.sidebar-menu {
+	ul {
+		li {
+			padding-bottom: 30px;
+			a {
+				font-size: 28px;
+				font-weight: 300;
+				color: $color-secondary;
+				span {
+					display: inline-block;
+					position: relative;
+					top: -15px;
+				}
+				&:hover {
+					color: $color-primary;
+				}
+				&.profile-active {
+					color: $color-primary;
+				}
+			}
+		}
+	}
+}
+
+.bullet-notif {
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background: red;
+	display: block;
+}
+
+.list-notification {
+	width: 100%;
+ 	li {
+		width: 100%;
+		position: relative;
+ 		padding-bottom: 20px;
+		margin-bottom: 20px;
+		border-bottom: 1px solid $color-soft;
+
+		label {
+			cursor: pointer;
+		}
+		
+		.bullet-notif {
+			position: absolute;
+			left: -15px;
+			top: 5px;
+		}
+
+		&.unread {
+			font-weight: 900;
+			cursor: pointer;
+		}
+		&.read {
+			cursor: default;
+			label {
+				cursor: default;
+			}
+			span {
+				display: none;
+			}
+		}
+
+
+	}
+
+	@include respond-to(handhelds) {
+		li.unread {
+				padding-left: 20px;
+
+				.bullet-notif {
+ 					left: 0px;
+ 				}
+			}
+		}
+}
+
+
+.boxed-message {
+	width: 100%;
+ 	li.list-message {
+ 		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid $color-soft;
+		&.read {
+			.head-message {
+				font-weight: 500;
+			}
+		 span {
+				display: none;
+			}
+		}
+ 		.head-message {
+ 			position: relative;
+ 			font-weight: 700;
+ 			padding: 10px 0px;
+ 			cursor: pointer;
+ 			label {
+ 				cursor: pointer;
+ 			}
+
+ 			i {
+ 				font-size: 24px;
+ 				color: $color-primary;
+ 				position: relative;
+ 				top:5px;
+ 				margin-left: 10px;
+ 			}
+ 			.bullet-notif {
+				position: absolute;
+				left: -15px;
+				top: 23px;
+			}
+
+			&.active-message {
+				i {
+					transform: rotate(180deg); 
+				}
+			}
+ 		}
+ 	}
+
+	@include respond-to(handhelds) {
+		li.list-message {
+			&.unread {
+				padding-left: 20px;
+			}
+		}
+	}
+
+}
+
+.box-message {
+	display: none;
+	.conversation {
+
+		.me {
+			margin-bottom: 20px;
+			float: left;
+			p {
+				color: $color-secondary;
+				opacity: 0.7;
+			}
+		}
+
+		.sender {
+			position: relative;
+			float: right;
+			max-width: 80%;
+			text-align: right;
+			p {
+				font-weight: 500;
+				color: $color-dark;
+				padding-bottom: 0px;
+				padding-top: 20px;
+			}
+			.avatar-sender {
+				width: 65px;
+				height: 65px;
+				position: absolute;
+				bottom: 0px;
+				right: -85px;
+				border-radius: 100%;
+				overflow: hidden;
+
+			}
+
+		}
+		
+	}
+
+	
+	.default-form {
+ 		clear: both;
+ 		padding-top: 30px;
+
+ 		.field {
+ 			position: relative;
+ 			span {
+ 				position: absolute;
+ 				right: 30px;
+ 				top: 14px;
+ 				font-size: 11px;
+ 				opacity: 0.5;
+ 				font-weight: 600;
+ 			}
+ 			textarea {
+ 				height: 40px;
+ 				padding:10px 20px;
+ 			}
+ 		}
+
+	}
+
+	@include respond-to(handhelds) {
+		.conversation {
+			.sender { 
+				max-width: 100%;
+				padding-right: 55px;
+	 			.avatar-sender {
+					width: 40px;
+					height: 40px;
+	 				bottom: 0px;
+					right: 0px;
+	 
+				}
+
+			}
+		}
+	}
+	
+}
+
+.content-setting {
+	padding-bottom: 90px;
+}
+
+.title-setting {
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+.deactive-account {
+	padding-top: 100px;
+}
+
+.radio-type {
+	padding-top: 12px !important;
+	.box-radio {
+		float: right;
+		margin-top: 2px;
+		.style-radio {
+			float: left;
+			padding-left: 20px;
+		}
+	}
+	
+	@include respond-to(handhelds) {
+		height: auto !important;
+		overflow: hidden;
+		border-radius: 16px !important;
+		.box-radio {
+			padding: 20px 0px 10px 0px;
+			float: inherit;
+			width: 100%;
+			overflow: hidden;
+			.style-radio {
+				padding-left: 0px;
+				padding-right: 20px;
+			}
+
+		}
+	}
+}
+ 

@@ -1,0 +1,19 @@
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font-heading;
+}
+
+h1.title {
+	font-size: 1.8em;
+	font-weight: 100;
+}
+
+h1.title-bold {
+	font-size: 1.3em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+ 
+h2.heading {
+	font-size: 14px;
+	font-weight: 700;
+}

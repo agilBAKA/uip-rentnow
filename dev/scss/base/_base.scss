@@ -1,0 +1,173 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: $font-base !important;
+	font-size: 14px;
+	background: #f7fafb;
+	color: $color-dark; 
+	font-weight: 400;
+	padding-top: 50px;
+	&.no-scroll {
+		overflow: hidden;
+	}
+
+	@include respond-to(handhelds) {
+		padding-top: 80px !important;
+		.section {
+			padding: 30px 0px;
+		}
+		.section-pages {
+			h1.title-page {
+				margin-bottom: 30px;
+				font-size: 32px; 
+			}
+ 		}
+	}
+}
+
+a.link-color {
+	color: $color-primary;
+	font-size: 11px;
+	text-decoration: underline;
+	font-weight: 500;
+}
+
+
+
+img {
+	max-width: 100%;
+}
+
+img.img-cover {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border: 0;
+	object-fit:cover;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.3s;
+	font-weight: 400;
+	
+}
+
+a.link {
+	color: $color-primary;
+	&:hover {
+		color: darken($color-secondary, 5%);
+	}
+}
+
+ul.pagination {
+ 	li {
+ 		display: inline-block;
+ 		a,
+ 		span {
+ 			display: block;
+ 			width: 30px;
+ 			height: 30px;
+ 			border-radius: 2px;
+ 			border: 1px solid #ddd;
+ 			text-align: center;
+ 			line-height: 30px;
+ 			transition:all 0.3s;
+ 			&.more {
+ 				border: transparent;
+ 			}
+ 			&.current {
+ 				background:$color-primary;
+ 				border-color:$color-primary;
+ 				color: #ffffff;
+ 			}
+ 			&:hover {
+	 			border-color:$color-primary;
+ 				color: $color-primary;	
+ 			}
+ 		} 
+ 	}
+
+ 	@include respond-to(handhelds) {
+ 		li {
+ 			a, span {
+ 				width: 25px;
+		 		height: 25px;
+		 		font-weight: 600;
+		 		line-height: 25px;
+		 		font-size: 11px;
+ 			}
+ 		}
+ 	}
+}
+
+.clearfix {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+}
+ 
+ ul.rating {
+	display: block;
+	li {
+		display: inline-block;
+		color: $color-secondary;
+		&.unrated {
+			color: #cbd4d7;
+		}
+	}
+ }
+ 
+ p {
+ 	line-height: 21px;
+ }
+
+.on-right {
+	float: right;
+}
+.on-left {
+	float: left;
+}
+
+
+.section-page {
+	padding-top: 40px;
+}
+
+
+.breadcrumb {
+	padding-top: 10px;
+	ul {
+		li {
+			display: inline-block;
+			a {
+				display: block;
+				position: relative;
+				font-size: 11px;
+				&:after {
+					content: '/';
+					padding-left: 10px;
+					padding-right: 10px;
+				}
+				&:hover {
+					color: $color-primary;
+				}
+			}
+
+			span {
+				font-size: 11px;
+			}
+		}
+	}
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	background: #000;
+	opacity: 0.6;
+	z-index: 9;
+}

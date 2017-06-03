@@ -1,0 +1,44 @@
+// Color
+$color-primary	:#25a9e0;
+$color-secondary:#ffd606;
+
+$color-soft		:#f2f2f2;
+$color-dark		:#000000;
+
+$color-grey		:#333333;
+
+$color-bg		:#f3f4f6;
+
+$color-error	:#123456;
+$color-success	:#123456;
+
+$color-link		: #3d64d4;
+
+
+// fonts
+$font-base		:'Open Sans', sans-serif;
+$font-heading 	:'Open Sans', sans-serif;
+
+$break-small: 480px;
+$break-large: 1024px;
+
+
+@mixin respond-to($media) {
+    @if $media == handhelds {
+        @media only screen and (max-width: $break-small) { @content; }
+    }
+    @else if $media == medium-screens {
+        @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+    }
+    @else if $media == wide-screens {
+        @media only screen and (min-width: $break-large) { @content; }
+    }
+    @else if $media == view-mobile {
+        @media only screen and (max-width: 800px) { @content; }
+    }
+
+    @else if $media == mobile-and-tablet {
+        @media only screen and (max-width: $break-large - 1) { @content; }
+    }
+
+}

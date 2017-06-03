@@ -1,0 +1,393 @@
+.header-rent {
+	width: 100%;
+	background: $color-dark;
+	position: relative;
+	#gallery-slider {
+		width: 100%;
+		height: 500px;
+		position: relative;
+		overflow: hidden;
+		.content-slider {
+			position: relative;
+			width: 100%;
+			height: 500px;
+
+			.title-slider{
+				position: absolute;
+ 				width: 100%;
+ 				top: 0px;
+ 				padding: 30px 0px 150px 0px;
+ 				background: rgba(0,0,0,0.69);
+				background: -moz-linear-gradient(top, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.39) 43%, rgba(246,246,246,0.14) 80%, rgba(255,255,255,0) 100%);
+				background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0.69)), color-stop(43%, rgba(0,0,0,0.39)), color-stop(80%, rgba(246,246,246,0.14)), color-stop(100%, rgba(255,255,255,0)));
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.39) 43%, rgba(246,246,246,0.14) 80%, rgba(255,255,255,0) 100%);
+				background: -o-linear-gradient(top, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.39) 43%, rgba(246,246,246,0.14) 80%, rgba(255,255,255,0) 100%);
+				background: -ms-linear-gradient(top, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.39) 43%, rgba(246,246,246,0.14) 80%, rgba(255,255,255,0) 100%);
+				background: linear-gradient(to bottom, rgba(0,0,0,0.69) 0%, rgba(0,0,0,0.39) 43%, rgba(246,246,246,0.14) 80%, rgba(255,255,255,0) 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=0 );
+ 				h2 {
+					font-size: 24px;
+					color: #ffffff;
+					font-weight: 300;
+				} 
+			}
+		}
+
+		.slick-arrow {
+			position: absolute;
+			width: 80px;
+			height: 65px;
+			background: #ffffff;
+			border: 0px;
+			bottom: 20px;
+			color: $color-dark;
+			cursor:pointer;
+			transition:all 0.3s;
+			font-size: 42px;
+			text-align: center;
+			z-index: 9;
+
+			&.slick-arrow-next {
+				right: 0px;
+			}
+			&.slick-arrow-prev {
+				left: 0px;
+			}
+
+
+		}
+
+		.slick-dots {
+			position: absolute;
+			right:100px;
+			bottom: 40px;
+			z-index: 9;
+			li {
+				display: inline-block;
+				width: 25px;
+				height: 25px;
+				border-radius: 100%;
+				background: transparent;
+				border: 4px solid #ffffff;
+				cursor: pointer;
+				position: relative;
+				margin-left: 15px;
+				&.slick-active {
+					background: #ffffff;
+				}
+				button {
+					opacity: 0;
+					cursor:pointer;
+				}
+			}
+		}
+	}
+
+	.box-price {
+ 		position: absolute;
+		max-width: 1170px;
+		width: 100%;
+		left: 50%;
+		bottom: 20px;
+		transform:translateX(-50%);
+		h3 {
+			display: inline-block;
+			padding:20px 25px;
+			height: 65px;
+			background: #ffffff;
+			font-size: 28px;
+			font-weight: 600;
+			color: $color-primary;
+		}
+	}
+
+	@include respond-to(handhelds) {
+		#gallery-slider {
+			height: auto;
+			.content-slider {
+			 	height: 40vh;
+			 	.title-slider {
+			 		 padding: 15px;
+			 		 top: 0px;
+			 	}
+			}
+
+			.slick-arrow {
+				display: none !important;
+			}
+
+			.slick-dots {
+				position: absolute;
+				right:0%; 
+				bottom: 10px;
+				width: 100%;
+				text-align: center;
+ 				li {
+					display: inline-block;
+					width: 10px;
+					height: 10px;
+					border-radius: 100%;
+					background: transparent;
+					border: 1px solid #ffffff;
+					cursor: pointer;
+					position: relative;
+					margin: 0px 5px;
+					&.slick-active {
+						background: #ffffff;
+					}
+					button {
+						opacity: 0;
+						cursor:pointer;
+					}
+				}
+			}
+		}
+
+		.box-price {
+			position: relative;
+			left: 0%;
+		    bottom:0px;
+		    transform: translateX(0%);
+		    border-bottom: 1px solid $color-primary;
+		    h3 {
+		    	height: auto;
+		    	font-size: 24px;
+		    	width: 100%;
+		    	text-align: center;
+		    }
+		}
+	}
+}
+
+.component-items {
+	ul {
+		display: flex;
+		li {
+			width: 25%;
+			span {
+				color: $color-primary;
+				display: block;
+			}
+
+			label {
+				font-size: 16px;
+				padding-top: 5px;
+				display: block;
+			}
+		}
+	}
+
+	margin-bottom:50px;
+
+	@include respond-to(handhelds) {
+		overflow: hidden;
+		margin-bottom: 30px;
+		 ul {
+		 	display: block;
+		 	li {
+		 		width: 50%;
+		 		float: left;
+		 		padding: 10px 0px;
+		 	}
+		 }
+	}
+}
+
+.aside-rent {
+	.aside-rent-avail {
+		position: relative;
+		font-size: 19px;
+		font-weight: 600;
+		padding-bottom: 20px;
+		color: $color-primary;
+		cursor: pointer;
+		i {
+			float: right;
+			font-size: 32px;
+			transition:all 0.3s;
+		}
+		#rent-avail {
+			&.rent-avail-show {
+				i {
+					transform:rotate(180deg); 
+				}
+			}
+		}
+
+		#rent-avail-container {
+			position: absolute;
+			right: -50px;
+			top: 20px;
+			max-height: 0px;
+			overflow: hidden; 
+			transition:max-height 0.3s;
+			.date-picker-wrapper  {
+				margin: 20px 50px;
+				box-shadow:0px 4px 21px 0px rgba(0, 0, 0, 0.09);
+				tr td div.booked  {
+					cursor: default !important;
+ 					background: transparent !important;
+ 					color: $color-dark !important;
+				}
+				tr td div.has-tooltip {
+  				    color: $color-dark !important;
+				    text-decoration: line-through;
+				}
+			}
+
+			&.container-show {
+				max-height: 500px;
+
+			}
+		}
+	}
+
+	@include respond-to(handhelds) {
+		margin-bottom: 30px;
+	}
+
+}
+
+.box-rent {
+	overflow: auto;
+	.content-modal {
+		max-width: 680px;
+		height: auto;
+		.content-modal-inner {
+			padding-right: 50px;
+			padding-bottom: 40px;
+		}
+	}
+
+	h3 {
+		font-size: 19px;
+		font-weight: 600;
+		margin-bottom: 40px;
+		color: $color-dark;
+	}
+
+	#rent-second-step .title-modal {
+		h2 {
+			font-size: 27px;
+			font-weight: 300;
+			color: $color-dark;
+		}
+		margin-bottom: 40px;
+	}
+
+	.border-right {
+		border-left: 1px solid #ddd;
+		position: relative;
+	}
+
+	ul.info-rent {
+		li {
+			padding-bottom: 30px;
+			&:last-child {
+				position: absolute;
+				bottom: 0px;
+				padding:0px;
+			}
+
+			label {
+				font-weight: 900;
+				font-size: 16px;
+				&.cost {
+					font-size: 12px;
+				}
+				display: block;
+				padding-bottom:5px;
+				sub {
+					font-size: 13px;
+				}
+			}
+
+			span {
+				font-size: 11px;
+				font-weight: 500;
+				font-style: italic;
+				padding-top: 4px;
+				opacity: 0.7;
+				display: block;
+				padding-bottom: 8px;
+			}
+
+			h4 {
+				color: $color-primary;
+				font-size: 16px;
+				font-weight: 700;
+			}
+		}
+	}
+	
+	form.form-outline {
+		padding-right: 50px;
+		.blocked {
+			height: 100px;
+			overflow: hidden;
+		}
+		.field {
+			margin-bottom: 15px;
+			input {
+				width: 100%;
+				border-color:transparent;
+				border-bottom: 1px solid $color-primary;
+				font-family: $font-base;
+				font-size: 15px;
+				padding-bottom: 10px;
+				&:focus {
+					outline:none;
+				}
+			}
+		}
+	}
+
+	#go-rent {
+		max-width: 315px;
+		margin: 60px auto 0px auto;
+		display: block;
+	}
+}
+
+.section-rent {
+	display: none;
+
+	&.section-rent-active { 
+		display: block;
+	}
+}
+
+
+.box-desc-lease {
+	padding-right: 100px;
+
+	&.desc-lease-house {
+		margin-top: -64px;
+	}
+
+	.content-desc {
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 20px;
+		margin-bottom: 10px;
+		margin-top: 30px;
+		overflow: hidden;
+		&:last-child {
+			border-bottom: none;
+		}
+		h4 {
+			font-size: 18px;
+			font-weight: 400;
+			color: $color-primary;
+		}
+
+		ul {
+			width: 100%;
+			text-align: left;
+			li {
+				float: left;
+				width: (100% / 3);
+				padding-bottom: 15px;
+			}
+		}
+	}
+}

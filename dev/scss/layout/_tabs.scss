@@ -1,0 +1,41 @@
+.tabs {
+	border-bottom: 1px solid #ddd;
+	li {
+		display: inline-block;
+		padding: 20px 25px;
+		cursor: pointer;
+		top: 2px;
+		position: relative;
+		border-bottom:3px solid transparent; 
+		&.tabs--selected {
+			color: $color-primary;
+			border-color:$color-primary;
+		}
+	}
+
+	@include respond-to(handhelds) {
+		li {
+			padding: 15px 15px;
+		}
+	}
+}
+
+.tab-content {
+	display: none;
+	padding: 20px;
+	&.tab-content--selected {
+		display: block;
+	}
+}
+
+.box-fasilitas {
+	label {
+		display: block;
+		padding-bottom: 10px;
+		i {
+			color: $color-primary;
+			font-size: 120%;
+			padding-right: 5px;
+		}
+	}
+}

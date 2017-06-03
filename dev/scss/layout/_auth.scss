@@ -1,0 +1,96 @@
+.box-password {
+	padding-top: 40px;
+	form {
+		margin-left: 100px;
+		max-width: 230px;
+		a {
+			margin-top:-5px;
+		}
+		
+	}
+	.icon-pass {
+		font-size: 48px;
+		float: left;
+		color: $color-primary
+	}
+}
+
+
+.gender {
+	padding-top: 12px !important;
+	.box-radio {
+		float: right;
+		margin-top: 2px;
+		.style-radio {
+			float: left;
+			padding-left: 20px;
+		}
+	}
+	
+}
+
+.drop-photo {
+ 
+	float: left;
+}
+
+.register {
+	float: right;
+	width: 230px;
+	margin-top: 50px;
+	.link-color {
+		display: block;
+		font-size: 13px;
+		margin-bottom: 15px;
+	}
+	.style-check {
+		margin-top: 10px;
+		float: left;
+	} 
+
+	.btn-primary {
+		float: right;
+		margin: 0px;
+		width: 130px;
+	}
+}
+
+.section-auth {
+	@include respond-to(handhelds) {
+
+		.box-password {
+			padding-top: 40px;
+			form {
+				margin-left: 0px;
+				max-width: 100%;
+				padding: 15px;
+				a {
+					margin-top:-5px;
+				}
+				
+			}
+			.icon-pass {
+				font-size: 48px;
+				float: inherit;
+				display: block;
+				text-align: center;
+			}
+		}
+
+		.drop-photo {
+			float: inherit;
+			.avatar {
+				margin: 0 auto;
+			}
+		}
+		.register {
+			float: inherit;
+			width: 100%;
+			a.link-color {
+				text-align: center;
+				margin-bottom: 20px;
+				display: block;
+			}
+		}
+	}
+}

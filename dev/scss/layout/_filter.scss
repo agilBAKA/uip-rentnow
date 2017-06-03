@@ -1,0 +1,126 @@
+.sidebar-filter {
+	background:#ffffff;
+	border-radius: 6px;
+	border: 1px solid #ddd; 
+	margin-bottom: 30px;
+
+	#finish-filter {
+		display: none;
+	}
+
+	.sidebar-filter__header {
+		padding: 15px;
+	    background: #dee7ea;
+	    a {
+	    	float: right;
+	    	font-weight: 700
+	    }
+	    overflow: hidden;
+	}
+	
+	.sidebar-filter__content {
+		padding: 15px;  
+		border-bottom: 1px solid #ddd;
+	}
+
+	.filter-header {
+		font-size: 11px;
+		font-weight: 600;
+		text-transform: uppercase;
+		cursor: pointer;
+		h3 {
+			display: inline-block;
+		}
+
+		i {
+			font-size: 18px;
+			float: right;
+			margin-top: -5px;
+			transition:all 0.3s;
+
+			&.rotate {
+				transform: rotate(180deg) 
+			}
+		}
+	}
+
+	.filter-body {
+		transition:all 0.3s;
+		opacity: 1;
+		max-height: 400px;
+		&.filter-hide {
+			max-height: 0px;
+			overflow: hidden;
+			opacity: 0;
+		}
+		ul {
+			padding-top: 15px;
+			li {
+				overflow: hidden;
+				padding: 10px 0px;
+			}
+		}
+	}
+
+	.rated {
+		color: $color-secondary;
+		font-size: 18px;
+	}
+
+	@include respond-to(handhelds) {
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		height:100vh;
+		width: 100%;
+		z-index: 100;
+		border-radius: 0px;
+		border:none;
+		margin: 0px;
+		max-height: 0px;
+		overflow: hidden;
+		transition:all 0.3s;
+
+		&.sidebar-filter--show {
+			max-height: 100vh;
+			overflow: auto;
+			#finish-filter {
+				display: block;
+				position: fixed;
+				bottom: 15px;
+				right: 15px;
+				min-width: 100px;
+				padding: 14px 0px;
+				z-index: 101;
+			}
+		}
+
+	}
+
+}
+
+.price-range {
+	display: flex;
+	padding: 15px 0px;
+
+	span {
+		padding: 10px 7px;
+		display: block;
+	}
+}
+
+button#filter-now {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 45px;
+	background: $color-secondary;
+	z-index: 99;
+	border: 0px;
+	font-family: $font-base;
+	@include respond-to(handhelds) {
+		display: block;
+	}
+}
