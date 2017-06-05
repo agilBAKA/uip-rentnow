@@ -40,6 +40,9 @@ header.header-section {
 		float: right;
 	}
 	@include respond-to(handhelds) {
+		h2 {
+			display: block;
+		}
 		a.link {
 			padding: 10px 0px;
 			display: inline-block;

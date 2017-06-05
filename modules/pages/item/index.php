@@ -329,6 +329,27 @@
     <script type="text/javascript" src="dist/js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
+             $('#btn-more').on('click', function () {
+                $('body').addClass('no-scroll');
+                $('.menu__additional').addClass('menu__additional--active');
+                $('.btn-close-menu').addClass('btn-close-menu--active');
+                $(".menu").append('<div class="overlay"></div>');
+
+            });
+
+
+            function close(eventClose){
+                $(eventClose).on('click', function () {
+                    $(".overlay").hide();
+                    $('body').removeClass('no-scroll');
+                    $('.menu__additional').removeClass('menu__additional--active');
+                    $('.btn-close-menu').removeClass('btn-close-menu--active');
+                });
+            }
+
+            close('#btn-close-menu');
+            close('.overlay');
+            
             $("select.select-kota").select2();
 
             $('#date').datepicker({

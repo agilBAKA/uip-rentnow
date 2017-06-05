@@ -612,12 +612,10 @@
                     slidesToScroll: 1,
                     arrows:false,
                     centerMode: true,
-                    infinite: false,
-                    centerPadding: '0px',
-
+                    centerPadding: '60px'
                 })
             }else {
-                
+                $('.list-item').unslick()
             }
         })
     </script>
