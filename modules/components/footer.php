@@ -37,8 +37,8 @@
             <div class="col-md-4">
                 <label for="subscribe"></label>
                 <div class="box-subscribe">
-                    <form action="" class="default-form">
-                        <input type="text" placeholder="Email" name="subscribe">
+                    <form action="">
+                        <input type="email" class="field" placeholder="Email" name="subscribe">
                         <input type="submit" value="subscribe" class="btn-primary" id="btn-subscribe">
                     </form>
                 </div>

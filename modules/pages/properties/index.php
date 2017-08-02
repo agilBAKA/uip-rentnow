@@ -4,36 +4,43 @@
      <?php require 'modules/components/head.php'; ?>
      <link href="dist/css/select2.css" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
     <header class="header-pages">
         <div class="container">
             <div class="row">
-                <form action="" class="default-form search-form">
-                    <div class="field field--destination">
-                        <label>Kota Tujuan</label>
-                        <i class="zmdi zmdi-pin"></i>
-                        <select class="select-kota">
-                            <option value="">Jakarta</option>
-                            <option value="">Bandung</option>
-                            <option value="" selected>Yogyakatra</option>
-                            <option value="">Malang</option>
-                            <option value="">Surabaya</option>
-                            <option value="">Bali</option>
-                            <option value="">Lombok</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label>Tanggal Penyewaan</label>
-                        <i class="zmdi zmdi-calendar"></i>
-                        <input type="text" class="date">
-                    </div>
-                    <div class="field">
-                        <button class="btn-secondary btn-small">Ubah Pencarian</button>
-                    </div>
-                </form>
+                <div class="col-md-12">
+                    <form action="" class="box-search">
+                        <div class="box-field box-field--destination">                            
+                            <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
+                            <select class="select-kota">
+                                <option value="">Jakarta</option>
+                                <option value="">Bandung</option>
+                                <option value="" selected>Yogyakatra</option>
+                                <option value="">Malang</option>
+                                <option value="">Surabaya</option>
+                                <option value="">Bali</option>
+                                <option value="">Lombok</option>
+                            </select>
+                        </div>
+                        <div class="box-field" id="searchRange">
+                            <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                            <div class="box-range">
+                                <div class="field-search">
+                                    <input type="text" id="search-form" placeholder="Dari">
+                                </div>
+                                <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                <div class="field-search">
+                                    <input type="text" id="search-to" placeholder="Hingga">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-field">
+                            <button class="btn-secondary btn-small">Ubah Pencarian</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -66,10 +73,11 @@
 
     <?php require 'modules/components/footer.php'; ?>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+    <script type="text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="dist/js/vendor/jquery.daterangepicker.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
     <script type="text/javascript" src="dist/js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -93,20 +101,38 @@
 
             close('#btn-close-menu');
             close('.overlay');
-            $("select.select-kota").select2();
 
-            $('.date').datepicker({
-                format: 'dd/mm/yyyy',
-                startDate: '+1d',
-                autoclose:true,
-                todayHighlight: true,
-            }).datepicker("setDate", "0");
+            // search range
+            $('#searchRange').dateRangePicker({
+                stickyMonths: true,
+                autoClose: true,
+                startDate:'+1',
+                format: 'DD MMM YYYY',
+                customArrowPrevSymbol: '<i class="zmdi zmdi-arrow-left"></i>',
+                customArrowNextSymbol: '<i class="zmdi zmdi-arrow-right"></i>',
+                getValue: function()
+                {
+                    if ($('#search-form').val() && $('#search-to').val() )
+                        return $('#search-form').val() + ' to ' + $('#search-to').val();
+                    else
+                        return '';
+                },
+                setValue: function(s,s1,s2)
+                {
+                    $('#search-form').val(s1);
+                    $('#search-to').val(s2);
+                }
+            });
+
+            $("select.select-kota").select2();
 
             $(".slider-promo").slick({
                 dots: true,
                 arrows:false,
                 infinite: true,
-                speed: 300,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
                 slidesToShow: 1
             });
 

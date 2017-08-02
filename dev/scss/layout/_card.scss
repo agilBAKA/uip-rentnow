@@ -209,3 +209,42 @@
 		}
 	}
 }
+
+
+.boxed {
+	width: 100%;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 30px;
+	border:1px solid #dee7ea;
+	min-height: 300px;
+
+	&--pad {
+		padding:30px;
+	}
+
+	&__header {
+		padding: 30px ;
+	}
+
+	&__body {
+		padding: 15px 30px;
+	}
+}
+
+
+.box-info {
+	padding: 20px;
+	min-height: 0px;
+	background: $color-primary;
+	color: #ffffff;
+	p {
+		padding-top: 10px;
+		font-size: 13px;
+	}
+	i {
+		font-size: 21px;
+		padding-right: 5px;
+	}
+}

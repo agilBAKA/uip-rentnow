@@ -25,6 +25,8 @@
 	@extend .btn;
 	background: $color-primary;
 	color: $color-soft;
+    box-shadow: 0px 2px 6px -1px rgb(119, 205, 241);
+    border: 1px solid rgb(43, 161, 210);
 	&:hover {
 		background:darken($color-primary, 8%);
 		color: $color-soft;
@@ -54,6 +56,18 @@
 	}
 }
 
+.btn-default {
+	@extend .btn;
+	background: $color-bg;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0px 2px 6px -1px rgba(217, 224, 226, 0.78);
+    border: 1px solid rgb(222, 231, 234);
+    &:hover {
+		background:darken($color-bg, 1%);
+	}
+}
+
  
 .btn-primary-o {
 	@extend .btn;
@@ -79,3 +93,32 @@
 	padding: 7px 15px !important; 
 }
 
+
+.btn-social {
+    color: #ffffff;
+    padding: 10px 0px 15px 0px;
+    i {
+	    font-size: 21px;
+	    padding-right: 10px;
+	    position: relative;
+	    top: 3px;
+	}
+
+	&:hover {
+	    color: #ffffff
+	}
+}
+
+
+.btn-fb {
+    background: #3b559f;
+    &:hover {
+	    background: #344b8c;
+    }
+}
+.btn-g {
+    background: #dd4f43;
+    &:hover {
+	    background: darken(#dd4f43,5%);
+    }
+}

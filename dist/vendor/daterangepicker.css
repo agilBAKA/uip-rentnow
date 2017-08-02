@@ -7,6 +7,8 @@
 	line-height:25px;
 	padding-left:10px;
 	font-size:12px;
+	font-family:Arial,sans-serif;
+	font-weight:bold;
 	cursor:pointer;
 	color:#303030;
 	position:relative;
@@ -16,22 +18,14 @@
 {
 	position:absolute;
 	z-index:1;
-	padding: 10px;
+	padding: 15px;
 	font-size:12px;
 	line-height:20px;
 	color:#aaa;
 	background: #ffffff;
-	border-radius: 0px 0px 8px 8px !important; 
-	box-shadow: 0px 5px 34px 0px rgba(0, 0, 0, 0.35);
-	&:before {
-		content: '';
-		position: absolute;
-		top: -17px;
-		left: 50%;
-		border-width: 10px;
-		border-style: solid;
-		border-color: transparent transparent white transparent;
-	}
+	border-radius: 16px;
+	font-family:Arial,sans-serif;
+	box-sizing: border-box;
 }
 .date-picker-wrapper.inline-wrapper { position: relative; box-shadow: none; display:inline-block;}
 .date-picker-wrapper.single-date {
@@ -87,10 +81,8 @@
 }
 .date-picker-wrapper .month-wrapper table .day
 {
-	padding:0px;
-	width: 27px;
-	height: 27px;
-	line-height:27px; 
+	padding:5px 0;
+	line-height:1;
 	font-size:12px;
 	margin-bottom:1px;
 	color: #ccc;
@@ -104,17 +96,14 @@
 }
 .date-picker-wrapper .month-wrapper table .day.checked
 {
-	background: $color-primary;
-	color: #ffffff !important;
+	background-color: rgb(156, 219, 247);
 }
 .date-picker-wrapper .month-wrapper table .week-name
 {
 	height:20px;
 	line-height:20px;
 	font-weight:100;
-  	text-transform: uppercase;
-  	color: $color-dark;
-  	font-weight: 700;
+  text-transform: uppercase;
 }
 
 .date-picker-wrapper .month-wrapper table .day.has-tooltip { cursor:help !important;}
@@ -135,31 +124,24 @@
 
 .date-picker-wrapper .month-wrapper table .day.real-today { background-color: rgb(255, 230, 132); }
 .date-picker-wrapper .month-wrapper table .day.real-today.checked,
-.date-picker-wrapper .month-wrapper table .day.real-today.hovering {
-	background-color: rgb(112, 204, 213);
-	border-radius: 0px !important;
-}
+.date-picker-wrapper .month-wrapper table .day.real-today.hovering { background-color: rgb(112, 204, 213); }
 
 
 .date-picker-wrapper table .caption
 {
 	height:40px;
-	font-weight: 900;
-	color: $color-dark;
 }
 .date-picker-wrapper table .caption .next,
 .date-picker-wrapper table .caption .prev
 {
 	padding:0 5px;
 	cursor:pointer;
-	background: $color-dark;
-	color: #fff;
-	border-radius: 4px;
 }
 .date-picker-wrapper table .caption .next:hover,
 .date-picker-wrapper table .caption .prev:hover
 {
-	background-color: $color-primary;
+	background-color:#ccc;
+	color:white;
 }
 .date-picker-wrapper .gap
 {
@@ -193,7 +175,6 @@
 	line-height: 1.4;
 	position:relative;
 	padding: 10px 40px 10px 0;
-	display: none;
 }
 .date-picker-wrapper .drp_top-bar .error-top { display:none; }
 .date-picker-wrapper .drp_top-bar .normal-top { display:none; }
@@ -267,8 +248,8 @@
 	display: none;
 }
 
-.date-picker-wrapper .first-date-selected { background-color:$color-primary !important; border-radius: 100px 0px 0px 100px; color:white !important;  }
-.date-picker-wrapper .last-date-selected { background-color:$color-primary !important; border-radius: 0px 100px 100px 0px; color:white !important;  }
+.date-picker-wrapper .first-date-selected { background-color:#49e !important; color:white !important;  }
+.date-picker-wrapper .last-date-selected { background-color:#49e !important; color:white !important;  }
 .date-picker-wrapper .date-range-length-tip { position:absolute; margin-top:-4px; margin-left:-8px; box-shadow:0 0 3px rgba(0,0,0,.3); display:none;background-color:yellow; padding:0 6px; border-radius:2px; font-size:12px; line-height:16px; 
 -webkit-filter: drop-shadow(0 0 3px rgba(0,0,0,.3)); 
     -moz-filter: drop-shadow(0 0 3px rgba(0,0,0,.3)); 
@@ -290,86 +271,3 @@
 	cursor: pointer;
 }
 .date-picker-wrapper .week-number.week-number-selected { color: #4499EE; font-weight:bold;  }
-
-// ========================
-
-
-@font-face {
-    font-family: 'Glyphicons Halflings';
-    src: url('../fonts/glyphicons-halflings-regular.eot');
-    src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
-}
-
-.glyphicon {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    font-weight: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.glyphicon-time:before {
-    content: "\e023";
-}
-
-.glyphicon-chevron-left:before {
-    content: "\e079";
-}
-
-.glyphicon-chevron-right:before {
-    content: "\e080";
-}
-
-.glyphicon-chevron-up:before {
-    content: "\e113";
-}
-
-.glyphicon-chevron-down:before {
-    content: "\e114";
-}
-
-.glyphicon-calendar:before {
-    content: "\e109";
-}
-
- 
-
-.collapse {
-    display: none;
-}
-
-    .collapse.in {
-        display: block;
-    }
-
-.dropdown-menu {
-    position: absolute;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    font-size: 14px;
-    text-align: left;
-    list-style: none;
-    background-color: #fff;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, .15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
-}
-
-.list-unstyled {
-    padding-left: 0;
-    list-style: none;
-}
-

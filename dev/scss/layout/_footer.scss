@@ -26,6 +26,10 @@ footer {
  		margin: 20px 0px;
  		color: #fff;
 		position: relative;
+ 		input[type="email"] {
+			background: #ffffff;
+ 		}
+
  		input[type="submit"] {
  			position: absolute;
  			width: auto;
@@ -35,6 +39,9 @@ footer {
  			margin-top: 0;
  			font-weight: 700;
  			box-shadow: none;
+ 			height: 40px;
+ 			padding: 0px;
+ 			width: 120px;
  		}
  	}
 

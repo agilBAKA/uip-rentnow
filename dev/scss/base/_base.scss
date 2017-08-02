@@ -3,6 +3,7 @@ body {
 	margin: 0;
 	font-family: $font-base !important;
 	font-size: 14px;
+	line-height: 1.4;
 	background: #f7fafb;
 	color: $color-dark; 
 	font-weight: 400;
@@ -107,7 +108,7 @@ ul.pagination {
 	width: 100%;
 }
  
- ul.rating {
+ul.rating {
 	display: block;
 	li {
 		display: inline-block;
@@ -131,7 +132,7 @@ ul.pagination {
 
 
 .section-page {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 
@@ -170,4 +171,81 @@ ul.pagination {
 	background: #000;
 	opacity: 0.6;
 	z-index: 9;
+}
+
+.bb {
+	border-bottom: 1px dashed $color-line;
+	margin-bottom: 15px;
+}
+
+.container-small {
+	max-width: 760px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.table-line {
+	width: 100%;
+	box-shadow: inset 0px 0px 0px 1px $color-line;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	tr {
+		td {
+			padding: 15px;
+			border-bottom: 1px solid $color-line;
+		}
+	}
+}
+
+.slick-dots {
+	position: absolute;
+	z-index: 10;
+	bottom: 10px;
+	right: 15px;
+	li {
+		width: 10px;
+		height: 10px;
+		margin: 0px 2px;
+		border-radius: 100%;
+		border: 2px solid #ffffff;
+		display: inline-block;
+		cursor: pointer;
+		&.slick-active {
+			background:#ffffff 
+		}
+		button {
+			display: none;
+		}
+	}
+}
+
+.search-properties-home {
+	margin-top: -35px;
+}
+
+ul.tabs-properties {
+	li {
+		display: inline-block;
+		padding: 10px 15px;
+		border-radius: 4px 4px 0px 0px;
+	    background: #a8d5e4;
+	    cursor: pointer;
+	    &.tabs-properties--selected {
+	    	background: #ffffff;
+	    	color: $color-primary;
+	    }
+	}
+}
+
+.container-tab-content  {
+	max-height: 0px;
+	overflow: hidden;
+	&--selected {
+		max-height: 100px;
+	}
+
+	.box-search {
+		border-top-left-radius: 0px;
+	}
 }

@@ -4,36 +4,43 @@
      <?php require 'modules/components/head.php'; ?>
      <link href="dist/css/select2.css" rel="stylesheet" />
      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
     <header class="header-pages">
         <div class="container">
             <div class="row">
-                <form action="" class="default-form search-form">
-                    <div class="field field--destination">
-                        <label>Kota Tujuan</label>
-                        <i class="zmdi zmdi-pin"></i>
-                        <select class="select-kota">
-                            <option value="">Jakarta</option>
-                            <option value="">Bandung</option>
-                            <option value="" selected>Yogyakatra</option>
-                            <option value="">Malang</option>
-                            <option value="">Surabaya</option>
-                            <option value="">Bali</option>
-                            <option value="">Lombok</option>
-                        </select>
-                    </div>
-                    <div class="field">
-                        <label>Tanggal Penyewaan</label>
-                        <i class="zmdi zmdi-calendar"></i>
-                        <input type="text" class="date" id="date">
-                    </div>
-                    <div class="field">
-                        <button class="btn-secondary btn-small">Ubah Pencarian</button>
-                    </div>
-                </form>
+                <div class="col-md-12">
+                    <form action="" class="box-search">
+                        <div class="box-field box-field--destination">                            
+                            <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
+                            <select class="select-kota">
+                                <option value="">Jakarta</option>
+                                <option value="">Bandung</option>
+                                <option value="" selected>Yogyakatra</option>
+                                <option value="">Malang</option>
+                                <option value="">Surabaya</option>
+                                <option value="">Bali</option>
+                                <option value="">Lombok</option>
+                            </select>
+                        </div>
+                        <div class="box-field" id="searchRange">
+                            <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                            <div class="box-range">
+                                <div class="field-search">
+                                    <input type="text" id="search-form" placeholder="Dari">
+                                </div>
+                                <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                <div class="field-search">
+                                    <input type="text" id="search-to" placeholder="Hingga">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box-field">
+                            <button class="btn-secondary btn-small">Ubah Pencarian</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -123,11 +130,80 @@
                                     <span>Harga Mulai Dari</span>
                                     <label><sub>Rp</sub>1.000.000</label>
                                 </div>
-                                <a href="" class="btn-secondary btn-small">
+                                <a href="#table-rent" id="gotoRent" class="btn-secondary btn-small">
                                     RENTNOW
                                 </a>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="boxed box-info">
+                        <h2 class="heading"><i class="zmdi zmdi-info-outline"></i> Information</h2>
+                        <span class="divider"></span>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique facere deleniti consequuntur debitis nostrum hic, quae voluptatibus? Ad quisquam, reprehenderit, accusamus tempore expedita maiores nam veniam eius ipsam, aperiam mollitia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="table-rent">
+                        <table class="table-rent">
+                            <tr>
+                                <th>Status Sewa</th>
+                                <th>Lama Sewa</th>
+                                <th>waktu</th>
+                                <th>Total Harga</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <td>Sewa perjam</td>
+                                <td style="width: 150px;">
+                                    <select name="sewa-jam" id="sewaJam" class="field" >
+                                        <option value="">-- Pilih --</option>
+                                        <option value="perjam">1 Jam</option>
+                                        <option value="harian">2 Jam</option>
+                                    </select>
+                                </td>
+                                <td> 10 Oktober 2017, 09:00 WIB - 10:00 WIB
+                                </td>
+                                <td>
+                                    <span id="textHarga"><sub>IDR</sub>200.000/jam</span>
+                                    <strong><sub>IDR</sub><span id="totalharga">200.000</span></strong>
+                                </td>
+                                <td>
+                                    <a href="checkout.php" target="_blank" class="btn-secondary btn-small">Pilih Sekarang</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sewa Harian</td>
+                                <td style="width: 150px;">
+                                    <select name="sewa-hari" id="sewaHari" class="field" >
+                                        <option value="">-- Pilih --</option>
+                                        <option value="perjam">1 Hari</option>
+                                        <option value="harian">2 Hari</option>
+                                    </select>
+                                </td>
+                                <td>
+                                   10 Oktober 2017 - 11 Oktober 2017
+                                </td>
+                                <td>
+                                    <span id="textHarga"><sub>IDR</sub>200.000/hari</span>
+                                    <strong><sub>IDR</sub><span id="totalharga">200.000</span></strong>
+                                </td>
+                                <td>
+                                    <a href="checkout.php" target="_blank" class="btn-secondary btn-small">Pilih Sekarang</a>
+                                </td>
+                            </tr>
+
+                        </table> 
+                        
                     </div>
                 </div>
             </div>
@@ -323,9 +399,10 @@
     <?php require 'modules/components/footer.php'; ?>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.min.js"></script>
+    <script type="text/javascript" src="dist/js/vendor/jquery.daterangepicker.min.js"></script>
     <script type="text/javascript" src="dist/js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
@@ -347,17 +424,38 @@
                 });
             }
 
+            $("#gotoRent").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#table-rent").offset().top - 80
+                }, 1000);
+            });
+
             close('#btn-close-menu');
             close('.overlay');
             
             $("select.select-kota").select2();
 
-            $('#date').datepicker({
-                format: 'dd/mm/yyyy',
-                startDate: '+1d',
-                autoclose:true,
-                todayHighlight: true,
-            }).datepicker("setDate", "0");
+             // search range
+            $('#searchRange').dateRangePicker({
+                stickyMonths: true,
+                autoClose: true,
+                startDate:'+1',
+                format: 'DD MMM YYYY',
+                customArrowPrevSymbol: '<i class="zmdi zmdi-arrow-left"></i>',
+                customArrowNextSymbol: '<i class="zmdi zmdi-arrow-right"></i>',
+                getValue: function()
+                {
+                    if ($('#search-form').val() && $('#search-to').val() )
+                        return $('#search-form').val() + ' to ' + $('#search-to').val();
+                    else
+                        return '';
+                },
+                setValue: function(s,s1,s2)
+                {
+                    $('#search-form').val(s1);
+                    $('#search-to').val(s2);
+                }
+            });
 
             $('#cover-image').slick({
                 slidesToShow: 1,

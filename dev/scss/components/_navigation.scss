@@ -36,7 +36,7 @@ nav.navigation {
  		ul.menu__auth {
  			float: right;
  			li {
-				margin-top: 10px;
+				margin-top: 7px;
  				&:first-child {
  					a {
  						border-right: 0px;
@@ -71,7 +71,7 @@ nav.navigation {
 	 			a {
 	 				display: block;
 	 				font-weight: 400;
-	 				padding: 18px 15px;
+	 				padding: 16px 15px;
 	 				position: relative;
 	 				color: $color-dark;
 	 				&:hover,
@@ -198,4 +198,18 @@ nav.navigation {
  		}
  	}
 
+}
+
+
+
+.blank-spot {
+	width: 100%;
+	padding-left: 150px;
+	padding-top: 15px;
+	h2 {
+		border-left: 1px solid #ddd;
+		font-size: 18px;
+		display: block;
+		padding-left: 25px;
+	}
 }

@@ -55,13 +55,13 @@ header.header-properties {
 }
 
 .search-form {
-	display: flex;
-	.field {
+	.box-field {
+		display: inline-block;
 		padding-right: 15px;
 		position: relative;
 		min-width: 150px;
 		height: 40px;
-		&.field--destination {
+		&.box-field--destination {
 			width: 300px;
 			select {
 				width: 100%;
@@ -78,13 +78,15 @@ header.header-properties {
 			position: absolute;
 			color: rgba(37, 169, 224, 0.56);
 		    z-index: 1;
-		    top: 28px;
+		    top: 31px;
 		    left: 13px;
 		}
 		input {
 			height: 35px;
 			background: #ffffff;
 			padding-left: 35px;
+			border-radius: 4px;
+			border: none;
 		}
 
 		button {

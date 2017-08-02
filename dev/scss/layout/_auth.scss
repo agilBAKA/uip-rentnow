@@ -1,96 +1,78 @@
-.box-password {
-	padding-top: 40px;
-	form {
-		margin-left: 100px;
-		max-width: 230px;
-		a {
-			margin-top:-5px;
+section.section-auth {
+	width: 100%;
+	position: relative;
+ 	padding: 40px 0px 80px 0px;
+ 	display: flex;
+ 	align-items:center;
+ 	justify-content:center; 
+ 	background: rgba(37,169,224,1);
+	background: -moz-linear-gradient(top, rgba(37,169,224,1) 0%, rgba(22,112,148,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(37,169,224,1)), color-stop(100%, rgba(22,112,148,1)));
+	background: -webkit-linear-gradient(top, rgba(37,169,224,1) 0%, rgba(22,112,148,1) 100%);
+	background: -o-linear-gradient(top, rgba(37,169,224,1) 0%, rgba(22,112,148,1) 100%);
+	background: -ms-linear-gradient(top, rgba(37,169,224,1) 0%, rgba(22,112,148,1) 100%);
+	background: linear-gradient(to bottom, rgba(37,169,224,1) 0%, rgba(22,112,148,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#25a9e0', endColorstr='#167094', GradientType=0 );
+	&:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		background: url(../images/logo_back.png)no-repeat center  center fixed;
+		background-size: 95%;
+		opacity: 0.07;
+	}
+ }
+
+.box-auth {
+	padding: 0px 15px;
+	max-width: 500px;
+	width: 100%;
+	position: relative;
+	z-index: 1;
+	h1 {
+		text-align: center;
+		font-weight: 900;
+		color: #ffffff;
+	}
+	.card-auth {
+		margin-top: 20px;
+	 	width: 100%;
+	 	padding: 20px;
+	 	border-radius: 8px;
+	 	background: #fff;
+	 	box-shadow: 0px 15px 53px -6px #0a4c67;
+
+	 	.or {
+		    display: block;
+		    text-align: center;
+		    border-bottom: 1px solid #ddd;
+		    margin-bottom: 30px;
+			span {
+			    position: relative;
+			    display: inline-block;
+			    padding: 0px 10px;
+			    background: #ffffff;
+			    top: 10px
+			}
 		}
-		
-	}
-	.icon-pass {
-		font-size: 48px;
-		float: left;
-		color: $color-primary
-	}
-}
 
+	}
 
-.gender {
-	padding-top: 12px !important;
-	.box-radio {
-		float: right;
-		margin-top: 2px;
-		.style-radio {
-			float: left;
-			padding-left: 20px;
+	.go-auth {
+		width: 100%;
+		display: block;
+		text-align: center;
+		margin-top: 30px;
+		border:1px solid rgba(140, 202, 226, 0.57);
+		padding:25px;
+		color: #ffffff;
+		border-radius: 8px;
+		&:hover {
+			background: rgba(140, 202, 226, 0.37);
 		}
 	}
 	
-}
-
-.drop-photo {
- 
-	float: left;
-}
-
-.register {
-	float: right;
-	width: 230px;
-	margin-top: 50px;
-	.link-color {
-		display: block;
-		font-size: 13px;
-		margin-bottom: 15px;
-	}
-	.style-check {
-		margin-top: 10px;
-		float: left;
-	} 
-
-	.btn-primary {
-		float: right;
-		margin: 0px;
-		width: 130px;
-	}
-}
-
-.section-auth {
-	@include respond-to(handhelds) {
-
-		.box-password {
-			padding-top: 40px;
-			form {
-				margin-left: 0px;
-				max-width: 100%;
-				padding: 15px;
-				a {
-					margin-top:-5px;
-				}
-				
-			}
-			.icon-pass {
-				font-size: 48px;
-				float: inherit;
-				display: block;
-				text-align: center;
-			}
-		}
-
-		.drop-photo {
-			float: inherit;
-			.avatar {
-				margin: 0 auto;
-			}
-		}
-		.register {
-			float: inherit;
-			width: 100%;
-			a.link-color {
-				text-align: center;
-				margin-bottom: 20px;
-				display: block;
-			}
-		}
-	}
 }

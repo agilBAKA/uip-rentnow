@@ -15,18 +15,19 @@
             </ul>
             <ul class="menu__auth">
                 <li>
-                    <a href="#">
+                    <a href="login.php">
                         <i class="zmdi zmdi-account"></i>
                         <span>Masuk</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="register.php">
                         <i class="zmdi zmdi-sign-in"></i>
                         <span>Daftar</span>
                     </a>
-                </li>
+                </li> 
             </ul>
+
 
             <ul class="menu__additional">
                 <li>
@@ -36,7 +37,9 @@
                     <a href="#">Artikel</a>
                 </li>
                 <li>
-                </li>    
+                    <a href="#"><strong>Become a Vendor</strong></a>
+                </li>
+
             </ul>
         </div>
 

@@ -21,14 +21,17 @@
 @import 'layout/filter';
 @import 'layout/card';
 @import 'layout/tabs';
+@import 'layout/auth';
+@import 'layout/search';
 
 
- 
 // Pages 
 @import 'pages/index';
 @import 'pages/promo';
 @import 'pages/properties';
 @import 'pages/items';
+@import 'pages/checkout';
+@import 'pages/profile';
 
 // vendor 
 @import 'vendor/bstrp';
