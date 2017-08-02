@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
      <?php require 'modules/components/head.php'; ?>
-     <link href="dist/css/select2.css" rel="stylesheet" />
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
@@ -46,7 +43,131 @@
 					    <h2 class="heading">Pengaturan</h2>
 					    <div class="divider"></div>
 					</header>
-					            
+					<div class="boxed boxed--pad">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box-field">
+                                    <label>Bahasa</label>
+                                    <select class="field">
+                                        <option value="" selected>Bahasa Indonesia</option>
+                                        <option value="">Inggris</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box-field">
+                                    <label>Mata Uang</label>
+                                    <select class="field">
+                                        <option value="">USD</option>
+                                        <option value="">SGD</option>
+                                        <option value="" selected>IDR</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-act">
+                            <button class="btn btn-small btn-secondary">Simpan</button>
+                        </div>
+                    </div>
+                    <div class="boxed boxed--pad email-setting">
+                        <strong>Notification setting</strong>
+                        <br>
+                        <br>
+                        <div class="box-field">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Pesan</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="style-radio">
+                                        <input type="radio" name="pesan">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="style-radio">
+                                        <input type="radio" name="pesan">
+                                        <label>Tolak</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-field">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Rekomendasi</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="style-radio">
+                                        <input type="radio" name="rekomendasi">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="style-radio">
+                                        <input type="radio" name="rekomendasi">
+                                        <label>Tolak</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-field">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Berita</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="style-radio">
+                                        <input type="radio" name="berita">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="style-radio">
+                                        <input type="radio" name="berita">
+                                        <label>Tolak</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-field">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Setatus Penyewaan</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="style-radio">
+                                        <input type="radio" name="sewa">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="style-radio">
+                                        <input type="radio" name="sewa">
+                                        <label>Tolak</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-field">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label>Peringatan</label>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="style-radio">
+                                        <input type="radio" name="reminder">
+                                        <label>Email</label>
+                                    </div>
+                                    <div class="style-radio">
+                                        <input type="radio" name="reminder">
+                                        <label>Tolak</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="profile-act">
+                            <button class="btn btn-small btn-secondary">Simpan</button>
+                        </div>
+                    </div>          
                 </div>
 	        </div>
         </div>

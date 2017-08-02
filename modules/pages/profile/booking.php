@@ -2,9 +2,6 @@
 <html lang="en">
 <head>
      <?php require 'modules/components/head.php'; ?>
-     <link href="dist/css/select2.css" rel="stylesheet" />
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>

@@ -137,6 +137,14 @@ section.section-profile {
 			max-height: 2000px;
 		}
 	}
+
+	.boxed {
+		min-height: 20px;
+	}
+
+	.style-radio {
+		padding-top: 6px;
+	}
 }
 
 .booking-content {
@@ -393,4 +401,64 @@ span.bullet-notif {
 		}
 	}
 	
+}
+
+.connected-social-media {
+	li {
+		border-bottom: 1px solid #e5e9ff;
+		padding-bottom: 15px;
+		margin-bottom: 15px;
+		overflow: hidden;
+		button {
+			float: right;
+		}
+		&:last-child {
+			border-bottom: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.for-photo {
+	text-align: center;
+	div.avatar {
+		margin: 0 auto;
+	}
+}
+
+.upload-id {
+	width: 100%;
+	height: 250px;
+    background: url('../images/back-u-id.png')no-repeat center center #ecf3f5;
+	border: 1px dashed #25a9e0;
+	border-radius: 3px;
+	text-align: center;
+	position: relative;
+	input {
+		z-index: 2;
+	}
+	img {
+		max-width: 300px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform:translate(-50%, -50%);
+		z-index: 1; 
+	}
+}
+
+.profile-act {
+	border-top: 1px solid #e5e9ff;
+	padding-top: 15px;
+	margin-top: 15px;
+	button {
+		float: right;
+	}
+}
+
+.email-setting {
+	.style-radio {
+		float: right;
+	}
 }

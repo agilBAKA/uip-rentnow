@@ -284,3 +284,529 @@ POST:Array
     [width] => 364
 )
 
+=== 2017-08-02 13:42:44 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4B97.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 214
+    [width] => 364
+)
+
+=== 2017-08-02 13:44:50 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php3576.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 110
+    [width] => 110
+)
+
+=== 2017-08-02 13:52:35 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4EF8.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:53:53 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php8084.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:53:56 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php8D66.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:54:47 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php53D4.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:55:00 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php8489.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:55:11 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpB109.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:55:15 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpC06C.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:55:18 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpCD5D.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 300
+    [width] => 400
+)
+
+=== 2017-08-02 13:55:43 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php2FE1.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+)
+
+=== 2017-08-02 13:56:06 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php86FB.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:56:32 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpEE60.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:57:32 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpD76A.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:57:38 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpF032.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => true
+    [height] => 150
+    [width] => 150
+)
+
+=== 2017-08-02 13:57:44 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php8AD.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:57:49 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php1A13.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:58:04 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php5420.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:58:12 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php7555.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:58:35 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpCC40.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:58:39 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => back.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpDF5B.tmp
+            [error] => 0
+            [size] => 200599
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:58:44 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\phpF035.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:59:04 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php4069.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+
+=== 2017-08-02 13:59:23 ===============================
+FILES:Array
+(
+    [xfile] => Array
+        (
+            [name] => untukbangsa.jpg
+            [type] => image/jpeg
+            [tmp_name] => C:\xampp\tmp\php8860.tmp
+            [error] => 0
+            [size] => 54920
+        )
+
+)
+
+POST:Array
+(
+    [post] => modules/components/upload.php
+    [crop] => false
+    [height] => 250
+    [width] => 400
+)
+

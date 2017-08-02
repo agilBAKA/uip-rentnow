@@ -183,9 +183,9 @@
 
 
 div.avatar {
-	width: 150px; height: 150px; border-radius: 16px;
+	width: 115px; height: 115px; border-radius: 100%;
 	overflow: hidden;
-	background: url(../images/back-upload-avatar.png)no-repeat center center $color-soft;
+	background: url('../images/back-avatar.png')no-repeat center center #ecf3f5;
 }
 
 

@@ -33,13 +33,6 @@
                 <li>
                     <a href="#">Promosi</a>
                 </li>
-                <li>
-                    <a href="#">Artikel</a>
-                </li>
-                <li>
-                    <a href="#"><strong>Become a Vendor</strong></a>
-                </li>
-
             </ul>
         </div>
 
