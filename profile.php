@@ -1,1 +1,1 @@
- <?php require 'modules/pages/profile/index.php'; ?>
+<?php require 'modules/pages/profile/index.php'; ?>

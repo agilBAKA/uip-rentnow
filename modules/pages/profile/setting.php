@@ -23,13 +23,13 @@
                         	<a href="user-profile.php">Profil</a>
                         </li>
                         <li>
-                        	<a href="user-notif.php" class="link-active">Notifikasi <span class="dot"></span></a>
+                        	<a href="user-notif.php">Notifikasi <span class="dot"></span></a>
                         </li>
                         <li>
                         	<a href="user-message.php">Pesan <span class="dot"></span></a>
                         </li>
                         <li>
-                        	<a href="user-setting.php">Pengaturan</a>
+                        	<a href="user-setting.php" class="link-active">Pengaturan</a>
                         </li>
 
                     </ul>
@@ -43,36 +43,10 @@
             <div class="row">
                 <div class="col-md-12">
                 	<header>
-					    <h2 class="heading">Notif</h2>
+					    <h2 class="heading">Pengaturan</h2>
 					    <div class="divider"></div>
 					</header>
-					<ul class="list-notification">
-                        <li class="unread">
-                            <span class="bullet-notif"></span>
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="unread">
-                            <span class="bullet-notif"></span>
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="unread">
-                            <span class="bullet-notif"></span>
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="read">
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="read">
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="read">
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        <li class="read">
-                            <label>New Order From Azmi Aziz</label>
-                        </li>
-                        
-                    </ul>          
+					            
                 </div>
 	        </div>
         </div>
@@ -115,12 +89,6 @@
                     $(this).html('<i class="zmdi zmdi-plus"></i>Tambah Deposit');
                 }
             });
-
-            $('.unread').on('click', function(){
-                $(this).removeClass('unread').removeAttr('span').addClass('read');
-            });
-
-
         })
     </script>
 
