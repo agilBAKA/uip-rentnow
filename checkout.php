@@ -1,1 +1,1 @@
- <?php require 'modules/pages/chekcout/index.php'; ?>
+ <?php require 'modules/pages/checkout/index.php'; ?>

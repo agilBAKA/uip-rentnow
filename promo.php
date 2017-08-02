@@ -1,0 +1,1 @@
+<?php require 'modules/pages/promo/index.php'; ?>

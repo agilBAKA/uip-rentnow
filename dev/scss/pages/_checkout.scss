@@ -24,6 +24,16 @@
 	a.btn-secondary {
 		margin-right: 10px;
 	}
+
+	.for-voucher {
+		position: relative;
+		span {
+			position: absolute;
+			right: 8px;
+		    top: 6px;
+		    padding: 3px 18px !important;
+		}
+	}
 }
 
 .for-others {
@@ -43,6 +53,7 @@
 		}
 
 		td {
+			width: 100%;
 			&:last-child {
 				text-align: right;
 				padding-left: 10px;

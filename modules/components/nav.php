@@ -31,7 +31,7 @@
 
             <ul class="menu__additional">
                 <li>
-                    <a href="#">Promosi</a>
+                    <a href="promo.php">Promosi</a>
                 </li>
             </ul>
         </div>

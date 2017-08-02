@@ -84,6 +84,17 @@
 
                             <div class="info-checkout">
                                 <header>
+                                    <h2 class="heading">Gunakan Voucher</h2>
+                                    <span class="divider"></span>
+                                </header>
+                                <div class="box-field for-voucher">
+                                    <input type="text" class="field" placeholder="masukan kode disini..">
+                                    <span class="btn btn-small btn-secondary">Pilih</span>
+                                </div>
+                            </div>
+
+                            <div class="info-checkout">
+                                <header>
                                     <h2 class="heading">Info Pembayaran</h2>
                                     <span class="divider"></span> 
                                 </header>
