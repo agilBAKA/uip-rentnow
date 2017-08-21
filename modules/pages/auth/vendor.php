@@ -9,24 +9,40 @@
     
     <section class="section-auth">
         <div class="box-auth">
-            <h1 class="title">Lupa Password</h1>
+            <h1 class="title">Menjadi Vendor</h1>
             <div class="card-auth">
-                <p>Masukan alamat email Anda, kami akan mengirim link untuk me-reset password Anda</p>
-                <br>
                 <form action="" class="default-form">
+                   <div class="box-field">
+                        <label for="">Nama lengkap</label>
+                        <input class="field" type="text" placeholder="Nama Anda">
+                        <span class="info">Nama Sesuai KTP</span>
+                   </div>
                    <div class="box-field">
                         <label for="">Email Anda</label>
                         <input class="field" type="email" placeholder="Email Anda">
-                   </div>                 
-                   <div class="box-field">
-                        <a href="" class="btn-secondary btn-large full">KIRIM</a>
+                        <span class="info"> Contoh : example@email.com</span>
                    </div>
-                    
+                   <div class="box-field">
+                        <label for="">Password Anda</label>
+                        <input class="field" type="password" placeholder="Password Anda">
+                        <span class="info">Minimal 6 karakter</span>
+                   </div>
+                   
+                   <hr>
+
+                   <div class="box-field">
+                        <label for="">Nama vendor</label>
+                        <input class="field" type="text" placeholder="Nama vendor">
+                   </div>
+
+                   <div class="box-field">
+                        <a href="" class="btn-secondary btn-large full">DAFTAR</a>
+                   </div>
                </form>
             </div>
 
-            <a href="login.php" class="go-auth">
-               Masuk
+            <a href="http://agilbaka.com/projects/rentnow-vendor/" target="_blank" class="go-auth">
+                Masuk sebagai vendor
             </a>
         </div>
     </section>
@@ -59,8 +75,7 @@
             close('#btn-close-menu');
             close('.overlay');
 
-          
-
+           
         })
     </script>
 

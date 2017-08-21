@@ -55,6 +55,9 @@ header.header-section {
 .box-slider {
 	position: relative;
 	#content-slider {
+		img {
+			margin: 0 auto;
+		}
 		position: relative;
 		.slick-dots {
 			width: 100%;

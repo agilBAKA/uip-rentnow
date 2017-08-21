@@ -33,6 +33,9 @@
                 <li>
                     <a href="promo.php">Promosi</a>
                 </li>
+                <li>
+                    <a href="vendor.php">Menjadi vendor</a>
+                </li>
             </ul>
         </div>
 

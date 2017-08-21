@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
      <?php require 'modules/components/head.php'; ?>
-     <link href="dist/css/select2.css" rel="stylesheet" />
-     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
+      
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
@@ -16,7 +14,7 @@
                 <form action="" class="default-form">
                    <div class="box-field">
                         <label for="">Nama lengkap</label>
-                        <input class="field" type="email" placeholder="Nama Anda">
+                        <input class="field" type="text" placeholder="Nama Anda">
                         <span class="info">Nama Sesuai KTP</span>
                    </div>
                    <div class="box-field">
@@ -79,16 +77,7 @@
             close('#btn-close-menu');
             close('.overlay');
 
-            $('ul.tabs li').click(function(){
-                var tab_id = $(this).attr('data-tab');
-
-                $('ul.tabs li').removeClass('tabs--selected');
-                $('.tab-content').removeClass('tab-content--selected');
-
-                $(this).addClass('tabs--selected');
-                $("#"+tab_id).addClass('tab-content--selected');
-            })
-
+           
         })
     </script>
 

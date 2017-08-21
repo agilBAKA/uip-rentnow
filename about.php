@@ -1,0 +1,1 @@
+ <?php require 'modules/pages/static/about.php'; ?>

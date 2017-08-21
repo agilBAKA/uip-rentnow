@@ -36,12 +36,6 @@
                 <li>
                     <div class="style-check">
                         <input type="checkbox" name="duration">
-                        <label>Perjam</label>
-                    </div>
-                </li>
-                <li>
-                    <div class="style-check">
-                        <input type="checkbox" name="duration">
                         <label>Harian</label>
                     </div>
                 </li>

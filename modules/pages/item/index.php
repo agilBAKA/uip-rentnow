@@ -163,25 +163,6 @@
                                 <th></th>
                             </tr>
                             <tr>
-                                <td>Sewa perjam</td>
-                                <td style="width: 150px;">
-                                    <select name="sewa-jam" id="sewaJam" class="field" >
-                                        <option value="">-- Pilih --</option>
-                                        <option value="perjam">1 Jam</option>
-                                        <option value="harian">2 Jam</option>
-                                    </select>
-                                </td>
-                                <td> 10 Oktober 2017, 09:00 WIB - 10:00 WIB
-                                </td>
-                                <td>
-                                    <span id="textHarga"><sub>IDR</sub>200.000/jam</span>
-                                    <strong><sub>IDR</sub><span id="totalharga">200.000</span></strong>
-                                </td>
-                                <td>
-                                    <a href="checkout.php" target="_blank" class="btn-secondary btn-small">Pilih Sekarang</a>
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>Sewa Harian</td>
                                 <td style="width: 150px;">
                                     <select name="sewa-hari" id="sewaHari" class="field" >
