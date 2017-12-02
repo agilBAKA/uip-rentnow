@@ -1,0 +1,1 @@
+ <?php require 'modules/pages/static/not-found.php'; ?>
