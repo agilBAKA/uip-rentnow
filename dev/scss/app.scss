@@ -2,38 +2,40 @@
 @import 'helpers/variables';
 
 // base
-@import 'base/reset';
-@import 'base/base';
-@import 'base/typography';
+@import 'base/reset',
+		'base/base',
+		'base/typography';
 
 
 // Components 
-@import 'components/navigation';
-@import 'components/button';
-@import 'components/images';
-@import 'components/date';
+@import 'components/navigation',
+		'components/button',
+		'components/images',
+		'components/date';
 
 // layouts 
-@import 'layout/header';
-@import 'layout/grid';
-@import 'layout/forms';
-@import 'layout/footer';
-@import 'layout/filter';
-@import 'layout/card';
-@import 'layout/tabs';
-@import 'layout/auth';
-@import 'layout/search';
+@import 'layout/header',
+		'layout/grid',
+		'layout/forms',
+		'layout/footer',
+		'layout/filter',
+		'layout/card',
+		'layout/tabs',
+		'layout/auth',
+		'layout/search',
+		'layout/booking';
 
 
 // Pages 
-@import 'pages/index';
-@import 'pages/promo';
-@import 'pages/properties';
-@import 'pages/items';
-@import 'pages/checkout';
-@import 'pages/profile';
-@import 'pages/promo';
-@import 'pages/static';
+@import 'pages/index',
+		'pages/promo',
+		'pages/properties',
+		'pages/items',
+		'pages/checkout',
+		'pages/profile',
+		'pages/promo',
+		'pages/activity',
+		'pages/static';
 
 // vendor 
 @import 'vendor/bstrp';

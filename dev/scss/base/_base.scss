@@ -13,7 +13,7 @@ body {
 	}
 
 	@include respond-to(handhelds) {
-		padding-top: 80px !important;
+		padding-top: 98px;
 		.section {
 			padding: 30px 0px;
 		}
@@ -180,6 +180,7 @@ ul.rating {
 
 .container-small {
 	max-width: 760px;
+	padding: 0px 15px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 }
@@ -220,23 +221,7 @@ ul.rating {
 	}
 }
 
-.search-properties-home {
-	margin-top: -35px;
-}
 
-ul.tabs-properties {
-	li {
-		display: inline-block;
-		padding: 10px 15px;
-		border-radius: 4px 4px 0px 0px;
-	    background: #a8d5e4;
-	    cursor: pointer;
-	    &.tabs-properties--selected {
-	    	background: #ffffff;
-	    	color: $color-primary;
-	    }
-	}
-}
 
 .container-tab-content  {
 	max-height: 0px;

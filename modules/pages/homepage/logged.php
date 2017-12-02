@@ -7,7 +7,7 @@
 
 </head>
 <body>
-    <?php require 'modules/components/nav.php'; ?>
+    <?php require 'modules/components/nav-logged.php'; ?>
     <div class="box-slider">
         <div id="content-slider">
             <a href="promo.php">
@@ -21,9 +21,9 @@
             </a>
         </div>
     </div>
-    <header class="header-pages header-pages--home">
+    <header class="header-pages">
         <div class="container">
-           <!--  <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-8">
                     <h1 class="title">Kami menawarkan yang terbaik tersedia disekitar Anda</h1>
                     <h3>Yogyakarta, 23 Mei - 30 Mei 2017</h3>
@@ -35,8 +35,105 @@
                 </div>
             </div> -->
             <div class="row">
-                <div class="col-md-12">
-                     <?php require 'modules/pages/homepage/search-tab.php'; ?>
+                <div class="col-md-12 search-properties-home">
+                    <ul class="tabs-properties">
+                        <li class=" tabs-properties--selected" data-tab="tab-transportation">Transportasi</li>
+                        <li class="" data-tab="tab-accomodation">Akomodasi</li>
+                        <li class="" data-tab="tab-gear">Perlengkapan</li>
+                    </ul>
+                    <div class="container-tab-content container-tab-content--selected" id="tab-transportation">
+                        <form action="" class="box-search">
+                            <div class="box-field box-field--destination">                            
+                                <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
+                                <select class="select-kota--transportation">
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bandung</option>
+                                    <option value="" selected>Yogyakatra</option>
+                                    <option value="">Malang</option>
+                                    <option value="">Surabaya</option>
+                                    <option value="">Bali</option>
+                                    <option value="">Lombok</option>
+                                </select>
+                            </div>
+                            <div class="box-field search-range-transportation" id="searchRange">
+                                <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                                <div class="box-range">
+                                    <div class="field-search">
+                                        <input type="text" id="search-form" placeholder="Dari">
+                                    </div>
+                                    <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                    <div class="field-search">
+                                        <input type="text" id="search-to" placeholder="Hingga">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-field">
+                                <button class="btn-secondary btn-small">Cari Transportasi</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container-tab-content" id="tab-accomodation">
+                        <form action="" class="box-search">
+                            <div class="box-field box-field--destination">                            
+                                <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
+                                <select class="select-kota--accomodation">
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bandung</option>
+                                    <option value="" selected>Yogyakatra</option>
+                                    <option value="">Malang</option>
+                                    <option value="">Surabaya</option>
+                                    <option value="">Bali</option>
+                                    <option value="">Lombok</option>
+                                </select>
+                            </div>
+                            <div class="box-field search-range-accomodation" id="searchRange">
+                                <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                                <div class="box-range">
+                                    <div class="field-search">
+                                        <input type="text" id="search-form" placeholder="Dari">
+                                    </div>
+                                    <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                    <div class="field-search">
+                                        <input type="text" id="search-to" placeholder="Hingga">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-field">
+                                <button class="btn-secondary btn-small">Cari Akomodasi</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="container-tab-content" id="tab-gear">
+                        <form action="" class="box-search">
+                            <div class="box-field box-field--destination">                            
+                                <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
+                                <select class="select-kota--gear">
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bandung</option>
+                                    <option value="" selected>Yogyakatra</option>
+                                    <option value="">Malang</option>
+                                    <option value="">Surabaya</option>
+                                    <option value="">Bali</option>
+                                    <option value="">Lombok</option>
+                                </select>
+                            </div>
+                            <div class="box-field search-range-gear" id="searchRange">
+                                <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                                <div class="box-range">
+                                    <div class="field-search">
+                                        <input type="text" id="search-form" placeholder="Dari">
+                                    </div>
+                                    <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                    <div class="field-search">
+                                        <input type="text" id="search-to" placeholder="Hingga">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-field">
+                                <button class="btn-secondary btn-small">Cari Perlengkapan</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -514,79 +611,78 @@
                     <h2 class="title">Destinasi Terbaik</h2>
                 </div>
             </div>
-             <div class="row up-card-activity">
-                 
-                <div class="col-md-3 col-6">
-                    <div class="card-destination">
-                        <a href="detail-activity.php">
-                            <img src="dist/images/new-1.jpg" alt="">
-                            <div class="card-destination__info">
-                                <h3>Papua</h3>
+            <div class="row">
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
                                 <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                                <span>Lihat semuanya</span>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="card-destination">
-                        <a href="detail-activity.php">
-                            <img src="dist/images/new-2.jpg" alt="">
-                            <div class="card-destination__info">
-                                <h3>Paris</h3>
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
                                 <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                                <span>Lihat semuanya</span>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="card-destination">
-                        <a href="detail-activity.php">
-                            <img src="dist/images/new-3.jpg" alt="">
-                            <div class="card-destination__info">
-                                <h3>Lombok</h3>
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
                                 <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                                <span>Lihat semuanya</span>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-3 col-6">
-                    <div class="card-destination">
-                        <a href="detail-activity.php">
-                            <img src="dist/images/new-4.jpg" alt="">
-                            <div class="card-destination__info">
-                                <h3>Yogyakarta</h3>
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
                                 <p>
-                                   Lorem ipsum dolor sit amet, consectetur adipisicing.
-                                </p>
-                                <span>Lihat semuanya</span>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-md-12">
-                    <div class="footer-properties">
-                        <label>8 dari 300 Activitas</label>
-                        <ul class="pagination">
-                            <li><a href=""><i class="zmdi zmdi-chevron-left"></i></a></li>
-                            <li><span class="current">1</span></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
-                            <li><a href="">5</a></li>
-                            <li><span class="more">...</span></li>
-                            <li><a href="">26</a></li>
-                            <li><a href=""><i class="zmdi zmdi-chevron-right"></i></a></li>
-                        </ul>
-                    </div>
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
+                                <p>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 box-destination">
+                    <a href="">
+                        <div class="card-background" style="background-image: url(dist/images/cover.jpg);">
+                            <div class="card-background__inner">
+                                <h2>Surabaya</h2>
+                                <p>
+                                    Tiramisu muffin gingerbread lollipop dessert lollipop fruitcake. Apple pie cheesecake soufflé apple pie.
+                                </p>  
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -611,6 +707,10 @@
                 $(".menu").append('<div class="overlay"></div>');
 
             });
+
+            $('#toggleMenu').on('click', function(){
+                $('.nav-account__body').toggleClass('is-show');
+            })
 
             $("#content-slider").slick({
                 dots: true,
@@ -689,15 +789,9 @@
                     arrows:false,
                     centerMode: true,
                     centerPadding: '60px'
-                });
-
-                $(window).on('scroll', function () {
-                    if($(this).scrollTop() > 50) {
-                        $('ul.menu__main').addClass('is-hide');
-                    } else {
-                        $('ul.menu__main').removeClass('is-hide');
-                    }
-                });
+                })
+            }else {
+                $('.list-item').unslick()
             }
         })
     </script>

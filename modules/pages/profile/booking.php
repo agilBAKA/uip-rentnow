@@ -4,7 +4,7 @@
      <?php require 'modules/components/head.php'; ?>
 </head>
 <body>
-    <?php require 'modules/components/nav.php'; ?>
+    <?php require 'modules/components/nav-logged.php'; ?>
      
     <?php require 'modules/pages/profile/header-profile.php'; ?>
 
@@ -14,19 +14,36 @@
                 <div class="col-md-12">
                     <ul>
                     	<li>
-                        	<a href="user-booking.php" class="link-active">Pemesanan</a>
+                        	<a href="user-booking.php" class="link-active">
+                        		<i class="zmdi zmdi-format-list-bulleted"></i>
+                        		<span class="txt">Pemesanan</span>
+                        	</a>
                         </li>
                         <li>
-                        	<a href="user-profile.php">Profil</a>
+                        	<a href="user-profile.php">
+                        		<i class="zmdi zmdi-account"></i>
+                        		<span class="txt">Profil</span>
+                        	</a>
                         </li>
                         <li>
-                        	<a href="user-notif.php">Notifikasi <span class="dot"></span></a>
+                        	<a href="user-notif.php">
+                        		<i class="zmdi zmdi-notifications"></i>
+                        		<span class="txt">Notifikasi</span>
+                        		<span class="dot"></span>
+                        	</a>
                         </li>
                         <li>
-                        	<a href="user-message.php">Pesan <span class="dot"></span></a>
+                        	<a href="user-message.php">
+                        		<i class="zmdi zmdi-email"></i>
+                        		<span class="txt">Pesan</span>
+                        		<span class="dot"></span>
+                        	</a>
                         </li>
                         <li>
-                        	<a href="user-setting.php">Pengaturan</a>
+                        	<a href="user-setting.php">
+                        		<i class="zmdi zmdi-settings"></i>
+                        		<span class="txt">Pengaturan</span>
+                        	</a>
                         </li>
 
                     </ul>
@@ -47,16 +64,16 @@
 						<div class="booking-content__list on-going">
 							<div class="content-header">
 								<strong>Transporasi - 143645643</strong>
-								<span class="on-right">Tanggal Pemesanan 1 Aug 2017</span>
+								<span class="on-right"> 1 Aug 2017</span>
 							</div>
 							<div class="content-body">
 								<div class="row">
 									<div class="col-md-8">
 										<h2>Mobil Fortuner </h2>
 										<ul class="time">
-											<li>1 Agustus 2017, 10:40 </li>
+											<li>1 Nov 2017, 10:40 </li>
 											<li><i class="zmdi zmdi-arrow-right"></i></li>
-											<li>2 Agustus 2017, 10:40 </li>
+											<li>2 Nov 2017, 10:40 </li>
 										</ul>
 									</div>
 									<div class="col-md-4">
@@ -69,16 +86,16 @@
 						<div class="booking-content__list on-going">
 							<div class="content-header">
 								<strong>Perlengkapan  - 143645643</strong>
-								<span class="on-right">Tanggal Pemesanan 1 Aug 2017</span>
+								<span class="on-right"> 1 Aug 2017</span>
 							</div>
 							<div class="content-body">
 								<div class="row">
 									<div class="col-md-8">
 										<h2>Camera Canon EOS 600D </h2>
 										<ul class="time">
-											<li>1 Agustus 2017, 10:40 </li>
+											<li>1 Nov 2017, 10:40 </li>
 											<li><i class="zmdi zmdi-arrow-right"></i></li>
-											<li>2 Agustus 2017, 10:40 </li>
+											<li>2 Nov 2017, 10:40 </li>
 										</ul>
 									</div>
 									<div class="col-md-4">
@@ -92,16 +109,16 @@
 						<div class="booking-content__list">
 							<div class="content-header">
 								<strong>Perlengkapan  - 143645643</strong>
-								<span class="on-right">Tanggal Pemesanan 1 Aug 2017</span>
+								<span class="on-right"> 1 Aug 2017</span>
 							</div>
 							<div class="content-body">
 								<div class="row">
 									<div class="col-md-8">
 										<h2>Camera Canon EOS 600D </h2>
 										<ul class="time">
-											<li>1 Agustus 2017, 10:40 </li>
+											<li>1 Nov 2017, 10:40 </li>
 											<li><i class="zmdi zmdi-arrow-right"></i></li>
-											<li>2 Agustus 2017, 10:40 </li>
+											<li>2 Nov 2017, 10:40 </li>
 										</ul>
 									</div>
 									<div class="col-md-4">
@@ -115,16 +132,16 @@
 						<div class="booking-content__list">
 							<div class="content-header">
 								<strong>Transportasi - 143645643</strong>
-								<span class="on-right">Tanggal Pemesanan 1 Aug 2017</span>
+								<span class="on-right"> 1 Aug 2017</span>
 							</div>
 							<div class="content-body">
 								<div class="row">
 									<div class="col-md-8">
 										<h2>Yamaha Jupiter MX 150cc </h2>
 										<ul class="time">
-											<li>1 Agustus 2017, 10:40 </li>
+											<li>1 Nov 2017, 10:40 </li>
 											<li><i class="zmdi zmdi-arrow-right"></i></li>
-											<li>2 Agustus 2017, 10:40 </li>
+											<li>2 Nov 2017, 10:40 </li>
 										</ul>
 									</div>
 									<div class="col-md-4">
@@ -154,6 +171,10 @@
 
             });
 
+            $('#toggleMenu').on('click', function(){
+                $('.nav-account__body').toggleClass('is-show');
+            })
+
 
             function close(eventClose){
                 $(eventClose).on('click', function () {
@@ -177,9 +198,9 @@
                 $(this).toggleClass('form-balance-show');
                 
                 if($('#btnAddBalance').hasClass('form-balance-show') == true){
-                    $(this).html('<i class="zmdi zmdi-close"></i>batalkan');
+                    $(this).html('<i class="zmdi zmdi-close"></i><span>Batalkan</span>');
                 }else {
-                    $(this).html('<i class="zmdi zmdi-plus"></i>Tambah Deposit');
+                    $(this).html('<i class="zmdi zmdi-plus"></i><span>Tambah Deposit</span>');
                 }
             });
         })

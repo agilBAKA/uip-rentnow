@@ -7,7 +7,7 @@
      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.standalone.min.css"/>
 </head>
 <body>
-    <?php require 'modules/components/nav.php'; ?>
+    <?php require 'modules/components/nav-logged.php'; ?>
      
     <?php require 'modules/pages/profile/header-profile.php'; ?>
 

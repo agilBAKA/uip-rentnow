@@ -7,43 +7,7 @@
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
-    <header class="header-pages">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <form action="" class="box-search">
-                        <div class="box-field box-field--destination">                            
-                            <label><i class="zmdi zmdi-pin"></i> Kota Tujuan</label>
-                            <select class="select-kota">
-                                <option value="">Jakarta</option>
-                                <option value="">Bandung</option>
-                                <option value="" selected>Yogyakatra</option>
-                                <option value="">Malang</option>
-                                <option value="">Surabaya</option>
-                                <option value="">Bali</option>
-                                <option value="">Lombok</option>
-                            </select>
-                        </div>
-                        <div class="box-field" id="searchRange">
-                            <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
-                            <div class="box-range">
-                                <div class="field-search">
-                                    <input type="text" id="search-form" placeholder="Dari">
-                                </div>
-                                <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
-                                <div class="field-search">
-                                    <input type="text" id="search-to" placeholder="Hingga">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box-field">
-                            <button class="btn-secondary btn-small">Ubah Pencarian</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </header>
+     
 
     <div class="container">
         <div class="row">
@@ -125,9 +89,25 @@
                                     Terverifikasi
                                 </div>
                             </div>
+                            <form action="" class="box-search">
+                                
+                                <div class="box-field search-range-transportation" id="searchRange">
+                                    <label><i class="zmdi zmdi-calendar"></i> Tanggal sewa</label>
+                                    <div class="box-range">
+                                        <div class="field-search">
+                                            <input type="text" id="search-form" placeholder="Dari">
+                                        </div>
+                                        <div class="arrows"><i class="zmdi zmdi-arrow-right"></i></div>
+                                        <div class="field-search">
+                                            <input type="text" id="search-to" placeholder="Hingga">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </form>
                             <div class="content-item__price">
                                 <div class="box-price">
-                                    <span>Harga Mulai Dari</span>
+                                    <span>Harga perhari</span>
                                     <label><sub>Rp</sub>1.000.000</label>
                                 </div>
                                 <a href="#table-rent" id="gotoRent" class="btn-secondary btn-small">
@@ -151,44 +131,7 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div id="table-rent">
-                        <table class="table-rent">
-                            <tr>
-                                <th>Status Sewa</th>
-                                <th>Lama Sewa</th>
-                                <th>waktu</th>
-                                <th>Total Harga</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td>Sewa Harian</td>
-                                <td style="width: 150px;">
-                                    <select name="sewa-hari" id="sewaHari" class="field" >
-                                        <option value="">-- Pilih --</option>
-                                        <option value="perjam">1 Hari</option>
-                                        <option value="harian">2 Hari</option>
-                                    </select>
-                                </td>
-                                <td>
-                                   10 Oktober 2017 - 11 Oktober 2017
-                                </td>
-                                <td>
-                                    <span id="textHarga"><sub>IDR</sub>200.000/hari</span>
-                                    <strong><sub>IDR</sub><span id="totalharga">200.000</span></strong>
-                                </td>
-                                <td>
-                                    <a href="checkout.php" target="_blank" class="btn-secondary btn-small">Pilih Sekarang</a>
-                                </td>
-                            </tr>
-
-                        </table> 
-                        
-                    </div>
-                </div>
-            </div>
-
+            
             <div class="row">
                 <div class="col-md-8">
                     <div class="boxed">
@@ -413,30 +356,6 @@
 
             close('#btn-close-menu');
             close('.overlay');
-            
-            $("select.select-kota").select2();
-
-             // search range
-            $('#searchRange').dateRangePicker({
-                stickyMonths: true,
-                autoClose: true,
-                startDate:'+1',
-                format: 'DD MMM YYYY',
-                customArrowPrevSymbol: '<i class="zmdi zmdi-arrow-left"></i>',
-                customArrowNextSymbol: '<i class="zmdi zmdi-arrow-right"></i>',
-                getValue: function()
-                {
-                    if ($('#search-form').val() && $('#search-to').val() )
-                        return $('#search-form').val() + ' to ' + $('#search-to').val();
-                    else
-                        return '';
-                },
-                setValue: function(s,s1,s2)
-                {
-                    $('#search-form').val(s1);
-                    $('#search-to').val(s2);
-                }
-            });
 
             $('#cover-image').slick({
                 slidesToShow: 1,
@@ -466,6 +385,32 @@
                 $(this).addClass('tabs--selected');
                 $("#"+tab_id).addClass('tab-content--selected');
             })
+            
+            $("select.select-kota").select2();
+
+             // search range
+            $('#searchRange').dateRangePicker({
+                stickyMonths: true,
+                autoClose: true,
+                startDate:'+1',
+                format: 'DD MMM YYYY',
+                customArrowPrevSymbol: '<i class="zmdi zmdi-arrow-left"></i>',
+                customArrowNextSymbol: '<i class="zmdi zmdi-arrow-right"></i>',
+                getValue: function()
+                {
+                    if ($('#search-form').val() && $('#search-to').val() )
+                        return $('#search-form').val() + ' to ' + $('#search-to').val();
+                    else
+                        return '';
+                },
+                setValue: function(s,s1,s2)
+                {
+                    $('#search-form').val(s1);
+                    $('#search-to').val(s2);
+                }
+            });
+
+            
 
         })
     </script>

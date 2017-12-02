@@ -13,20 +13,21 @@ header.header-pages {
 	.btn-primary {
 		box-shadow: 0px 1px 6px -1px #FF5722;
 	}
+	
+	&.header-pages--home {
+		background: transparent;
+	}
+	&.header-pages--activity {
+		padding-top: 20px;
+	}
 
+	 
 	@include respond-to(handhelds) {
-		padding:20px 15px;
-		text-align: center;
-		h1 {
-			font-size: 1.3em;
-			line-height: 27px;
+		padding: 15px 0px;
+		&.header-pages--home {
+			background: #fff;
+			padding: 0px;
 		}
-
-		.on-right {
-			float: none;
-			margin-top: 15px;
-		}
-
 	}
 }
 
@@ -38,6 +39,9 @@ header.header-section {
 
 	a.link {
 		float: right;
+	}
+	p {
+		margin-top: 15px;
 	}
 	@include respond-to(handhelds) {
 		h2 {
@@ -54,14 +58,33 @@ header.header-section {
 
 .box-slider {
 	position: relative;
+	height: 350px;
 	#content-slider {
+		height: 350px;
+		background: #000;
 		img {
 			margin: 0 auto;
+			width: 100%;
+			height: 400px;
+			object-fit:cover;
 		}
 		position: relative;
 		.slick-dots {
 			width: 100%;
 			text-align: center;
+			right: 0px;
 		}
 	}
+
+	@include respond-to(handhelds) {
+		height: 30vh;
+		#content-slider {
+			height: 30vh;
+			background: #000;
+			img {
+				height: 30vh;
+				object-fit:cover;
+			}
+		}
+	 }
 }

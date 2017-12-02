@@ -115,6 +115,17 @@
                $(this).next().toggleClass('content-show');
             })
 
+            var win = $(window).width();
+            if( win < 480 ) {
+            $(window).on('scroll', function () {
+                if($(this).scrollTop() > 50) {
+                    $('ul.menu__main').addClass('is-hide');
+                } else {
+                    $('ul.menu__main').removeClass('is-hide');
+                }
+                });
+            }
+               
 
         })
     </script>

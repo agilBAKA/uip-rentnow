@@ -4,29 +4,46 @@
      <?php require 'modules/components/head.php'; ?>
 </head>
 <body>
-    <?php require 'modules/components/nav.php'; ?>
+    <?php require 'modules/components/nav-logged.php'; ?>
      
     <?php require 'modules/pages/profile/header-profile.php'; ?>
 
-    <div class="nav-profile">
+     <div class="nav-profile">
         <div class="container-small">
             <div class="row">
                 <div class="col-md-12">
                     <ul>
-                    	<li>
-                        	<a href="user-booking.php">Pemesanan</a>
+                        <li>
+                            <a href="user-booking.php" >
+                                <i class="zmdi zmdi-format-list-bulleted"></i>
+                                <span class="txt">Pemesanan</span>
+                            </a>
                         </li>
                         <li>
-                        	<a href="user-profile.php">Profil</a>
+                            <a href="user-profile.php">
+                                <i class="zmdi zmdi-account"></i>
+                                <span class="txt">Profil</span>
+                            </a>
                         </li>
                         <li>
-                        	<a href="user-notif.php" class="link-active">Notifikasi <span class="dot"></span></a>
+                            <a href="user-notif.php" class="link-active">
+                                <i class="zmdi zmdi-notifications"></i>
+                                <span class="txt">Notifikasi</span>
+                                <span class="dot"></span>
+                            </a>
                         </li>
                         <li>
-                        	<a href="user-message.php">Pesan <span class="dot"></span></a>
+                            <a href="user-message.php">
+                                <i class="zmdi zmdi-email"></i>
+                                <span class="txt">Pesan</span>
+                                <span class="dot"></span>
+                            </a>
                         </li>
                         <li>
-                        	<a href="user-setting.php">Pengaturan</a>
+                            <a href="user-setting.php">
+                                <i class="zmdi zmdi-settings"></i>
+                                <span class="txt">Pengaturan</span>
+                            </a>
                         </li>
 
                     </ul>
@@ -89,6 +106,10 @@
 
             });
 
+            $('#toggleMenu').on('click', function(){
+                $('.nav-account__body').toggleClass('is-show');
+            })
+
             function close(eventClose){
                 $(eventClose).on('click', function () {
                     $(".overlay").hide();
@@ -107,9 +128,9 @@
                 $(this).toggleClass('form-balance-show');
                 
                 if($('#btnAddBalance').hasClass('form-balance-show') == true){
-                    $(this).html('<i class="zmdi zmdi-close"></i>batalkan');
+                    $(this).html('<i class="zmdi zmdi-close"></i><span>Batalkan</span>');
                 }else {
-                    $(this).html('<i class="zmdi zmdi-plus"></i>Tambah Deposit');
+                    $(this).html('<i class="zmdi zmdi-plus"></i><span>Tambah Deposit</span>');
                 }
             });
 

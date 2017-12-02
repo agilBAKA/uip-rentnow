@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <?php require 'modules/components/head.php'; ?>
-    <link href="dist/css/select2.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
-
+     <?php require 'modules/components/head.php'; ?>
+     <link href="dist/css/select2.css" rel="stylesheet" />
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
 </head>
 <body>
     <?php require 'modules/components/nav.php'; ?>
-    <div class="box-slider">
-        <div id="content-slider">
-            <a href="promo.php">
-                <img src="dist/images/slider/slider-1.jpg" alt="">
-            </a>
-            <a href="promo.php">
-                <img src="dist/images/slider/slider-2.jpg" alt="">
-            </a>
-            <a href="promo.php">
-                <img src="dist/images/slider/slider-3.jpg" alt="">
-            </a>
-        </div>
-    </div>
-    <header class="header-pages header-pages--home">
-        <div class="container">
-           <!--  <div class="row">
-                <div class="col-md-8">
-                    <h1 class="title">Kami menawarkan yang terbaik tersedia disekitar Anda</h1>
-                    <h3>Yogyakarta, 23 Mei - 30 Mei 2017</h3>
-                </div>
-                <div class="col-md-4">
-                    <a href="list.php" class="btn-secondary on-right">
-                        Tentukan Perjalanan Anda <i class="zmdi zmdi-search"></i>
-                    </a>
-                </div>
-            </div> -->
+     
+    <header class="header-pages header-pages--detail-activity"
+    style="background-image:url(https://static.pexels.com/photos/225284/pexels-photo-225284.jpeg)" 
+    >
+        <div class="container-small">
             <div class="row">
                 <div class="col-md-12">
-                     <?php require 'modules/pages/homepage/search-tab.php'; ?>
+                    <h1 class="title">Yogyakarta</h1>
                 </div>
             </div>
         </div>
     </header>
-
+    <section class="section-page section-page--activity activity-detail">
+        <div class="container-small">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="heading">Indahnya Yogyakarta</h2>
+                    <div class="divider"></div>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, aliquid quibusdam quae obcaecati corporis illum tempore consequuntur atque velit nobis cupiditate explicabo. Possimus harum sit, quibusdam provident dignissimos facilis totam ad labore impedit quam vel cumque nulla ullam dolorem accusamus pariatur, ducimus ea voluptatem corrupti maiores quia numquam, neque cum aperiam officia. Inventore fuga a accusamus quasi maxime laboriosam atque quia, repellat sapiente neque, minus fugiat nobis placeat nesciunt ipsam facere, in quos praesentium! Nam pariatur magnam quasi minima molestiae vero temporibus aliquam expedita unde perferendis nulla delectus accusantium ullam et repellendus fuga corporis, ab nemo voluptatem. Provident, quam, in.
+                    </p>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum harum, eaque eligendi libero, aspernatur ullam aliquid, sed similique optio laboriosam ducimus rerum repellendus assumenda sapiente magnam debitis expedita. Tenetur aliquam, odio molestias modi itaque eveniet, excepturi nobis incidunt saepe ipsam esse sapiente maxime velit deleniti perspiciatis aperiam ipsa cum amet dolorum non quas! Laborum nihil explicabo aut, voluptatum iure neque, harum laudantium error distinctio accusamus fugit ad minima voluptatem maiores, enim amet dolor a modi mollitia, ipsa nemo placeat non numquam perferendis. Illum quod omnis quae accusamus laudantium ducimus eligendi quam dolorem. Delectus porro, incidunt ad vero, ut ducimus suscipit impedit earum dolorem odit esse! Tenetur fugit impedit recusandae nostrum voluptatum! Eos, commodi aperiam quibusdam excepturi facere praesentium atque qui perferendis nam dolorum minima sunt id explicabo, magni sequi, consequuntur assumenda necessitatibus dignissimos natus asperiores doloremque quo autem. Officiis quo ab dolorem, velit eos dignissimos laudantium perferendis repellat corporis, magni ducimus quam fuga quisquam possimus nulla numquam esse assumenda sint doloribus excepturi hic sunt magnam odit enim sit! Exercitationem maiores quas, molestias dicta incidunt quo cumque. Laboriosam inventore fugit minima harum alias nostrum vel aliquam mollitia, necessitatibus, doloribus sit labore adipisci commodi dolore aperiam, dolor velit illum voluptatibus facere nam. Quam ipsam explicabo at quaerat ad necessitatibus rem perspiciatis tempora vitae ducimus optio, provident nesciunt architecto iste eligendi recusandae, consectetur quos ex placeat repellendus enim impedit nobis laborum. Perspiciatis inventore veritatis dolor possimus provident reiciendis nesciunt praesentium ab debitis cum rerum voluptatum mollitia quaerat sequi nobis, optio, vero, nostrum corporis non sunt repellendus vel repudiandae dolores quod! Ipsa officiis, reprehenderit! Iste suscipit magnam veritatis totam iusto commodi aperiam dolores, amet in eum similique minus ipsum adipisci unde eos? Expedita dolorum vitae possimus, quod. Delectus repellendus necessitatibus quam sed vero iure odio facere enim explicabo iste fugiat unde, rem soluta saepe?
+                    </p>
+                    <p class="paragraph">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas dolorum nam aliquid repudiandae deleniti laborum ab nobis fugiat, rem quis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section-page section-transportation">
         <div class="container">
             <div class="row">
@@ -50,7 +46,6 @@
                         <h2 class="heading">
                             TRANSPORTASI di Yogyakarta
                         </h2>
-                        <a href="list.php" class="link">Lihat semua Transportasi</a>
                     </header>
                 </div>
             </div>
@@ -205,7 +200,6 @@
                         <h2 class="heading">
                             AKOMODASI di Yogyakarta
                         </h2>
-                        <a href="list.php" class="link">Lihat semua Akomodasi</a>
                     </header>
                 </div>
             </div>
@@ -360,7 +354,6 @@
                         <h2 class="heading">
                             PERLENGKAPAN di Yogyakarta
                         </h2>
-                        <a href="list.php" class="link">Lihat semua Perlengkapan</a>
                     </header>
                 </div>
             </div>
@@ -510,13 +503,16 @@
     <section class="section-page section-destination">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h2 class="title">Destinasi Terbaik</h2>
-                </div>
+               <div class="col-md-12">
+                   <header class="header-section">
+                         <h2 class="heading">Aktivitas serupa</h2>
+                        <div class="divider"></div>
+                       
+                     </header>
+               </div>
             </div>
-             <div class="row up-card-activity">
-                 
-                <div class="col-md-3 col-6">
+            <div class="row">
+                <div class="col-md-3">
                     <div class="card-destination">
                         <a href="detail-activity.php">
                             <img src="dist/images/new-1.jpg" alt="">
@@ -530,7 +526,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3">
                     <div class="card-destination">
                         <a href="detail-activity.php">
                             <img src="dist/images/new-2.jpg" alt="">
@@ -544,7 +540,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3">
                     <div class="card-destination">
                         <a href="detail-activity.php">
                             <img src="dist/images/new-3.jpg" alt="">
@@ -558,7 +554,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-3 col-6">
+                <div class="col-md-3">
                     <div class="card-destination">
                         <a href="detail-activity.php">
                             <img src="dist/images/new-4.jpg" alt="">
@@ -572,90 +568,27 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="footer-properties">
-                        <label>8 dari 300 Activitas</label>
-                        <ul class="pagination">
-                            <li><a href=""><i class="zmdi zmdi-chevron-left"></i></a></li>
-                            <li><span class="current">1</span></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
-                            <li><a href="">5</a></li>
-                            <li><span class="more">...</span></li>
-                            <li><a href="">26</a></li>
-                            <li><a href=""><i class="zmdi zmdi-chevron-right"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+    
 
-    <?php require 'modules/components/footer.php'; ?> 
+    <?php require 'modules/components/footer.php'; ?>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.16.0/moment.min.js" type="text/javascript"></script>
-    <script type="text/javascript" src="dist/js/vendor/jquery.daterangepicker.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-    <script type="text/javascript" src="dist/js/main.js"></script>
-
+     <script type="text/javascript" src="dist/js/main.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-
-            $('#btn-more').on('click', function () {
+             $('#btn-more').on('click', function () {
                 $('body').addClass('no-scroll');
                 $('.menu__additional').addClass('menu__additional--active');
                 $('.btn-close-menu').addClass('btn-close-menu--active');
                 $(".menu").append('<div class="overlay"></div>');
 
             });
-
-            $("#content-slider").slick({
-                dots: true,
-                arrows:false,
-                infinite: true,
-                slidesToShow: 1,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear'
-            });
-
-             $("select.select-kota--transportation").select2();
-             $("select.select-kota--accomodation").select2();
-             $("select.select-kota--gear").select2();
-
-            // search range
-            function funIdSearch(ids){
-                $(ids).dateRangePicker({
-                    stickyMonths: true,
-                    autoClose: true,
-                    startDate:'+1',
-                    format: 'DD MMM YYYY',
-                    customArrowPrevSymbol: '<i class="zmdi zmdi-arrow-left"></i>',
-                    customArrowNextSymbol: '<i class="zmdi zmdi-arrow-right"></i>',
-                    getValue: function()
-                    {
-                        if ($('#search-form').val() && $('#search-to').val() )
-                            return $('#search-form').val() + ' to ' + $('#search-to').val();
-                        else
-                            return '';
-                    },
-                    setValue: function(s,s1,s2)
-                    {
-                        $('#search-form').val(s1);
-                        $('#search-to').val(s2);
-                    }
-                });
-                
-            }
-
-            funIdSearch('.search-range-transportation');
-            funIdSearch('.search-range-accomodation');
-            funIdSearch('.search-range-gear');
-
-
 
 
             function close(eventClose){
@@ -666,22 +599,13 @@
                     $('.btn-close-menu').removeClass('btn-close-menu--active');
                 });
             }
-
+ 
             close('#btn-close-menu');
             close('.overlay');
 
-            $('ul.tabs-properties li').click(function(){
-                var tab_id = $(this).attr('data-tab');
-
-                $('ul.tabs-properties li').removeClass('tabs-properties--selected');
-                $('.container-tab-content').removeClass('container-tab-content--selected');
-
-                $(this).addClass('tabs-properties--selected');
-                $("#"+tab_id).addClass('container-tab-content--selected');
-            })
-
-
-            var win = $(window).width();
+          
+           
+           var win = $(window).width();
             if( win < 480 ) {
                 $('.list-item').slick({
                     slidesToShow: 1,
@@ -699,7 +623,11 @@
                     }
                 });
             }
+ 
+            
+
         })
     </script>
+
 </body>
 </html>

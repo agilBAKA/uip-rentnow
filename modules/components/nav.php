@@ -2,15 +2,24 @@
     <div class="container">
         <a href="index.php" class="logo"></a>
         <div class="menu">
-            <ul class="menu__main">
+             <ul class="menu__main">
                 <li>
-                    <a href="list.php">Transportasi</a>
+                    <a href="list.php">
+                        <i class="zmdi zmdi-car"></i>
+                        <span>Transportasi</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="list.php">Akomodasi</a>
+                    <a href="list.php">
+                        <i class="zmdi zmdi-home"></i>
+                        <span>Akomodasi</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="list.php">Perlengkapan</a>
+                    <a href="list.php">
+                        <i class="zmdi zmdi-camera"></i>
+                        <span>Perlengkapan</span>
+                    </a>
                 </li>
             </ul>
             <ul class="menu__auth">
@@ -31,8 +40,12 @@
 
             <ul class="menu__additional">
                 <li>
+                    <a href="activity.php">Aktivitas</a>
+                </li>
+                <li>
                     <a href="promo.php">Promosi</a>
                 </li>
+
                 <li>
                     <a href="vendor.php">Menjadi vendor</a>
                 </li>

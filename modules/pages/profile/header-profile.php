@@ -10,12 +10,14 @@
                     <span class="divider"></span>
                     <div class="box-balance">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6 col-sx-6 col-6">
                                 <label>Deposit Anda</label>
                                 <h2><sub>IDR</sub>2.430.000</h2>
                             </div>
-                            <div class="col-md-6">
-                                <button id="btnAddBalance" class="on-right btn-secondary btn-small"><i class="zmdi zmdi-plus"></i> Tambah Deposit </button>
+                            <div class="col-md-6 col-sx-6 col-6">
+                                <button id="btnAddBalance" class="on-right btn-secondary btn-small"><i class="zmdi zmdi-plus"></i>
+                                    <span> Tambah Deposit</span>
+                                </button>
                             </div>
                         </div>
                     </div>

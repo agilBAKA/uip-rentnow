@@ -89,7 +89,7 @@ gulp.task('watch', function(){
         // server: {
         //     baseDir: './'
         // },
-        proxy: "http://localhost/uip-rentnow/",
+        proxy: "http://localhost/uip-rentnow",
         files: ["**/*.php"],
         injectChanges: true
     });

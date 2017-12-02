@@ -1,16 +1,50 @@
+.search-properties-home {
+	margin-top: -10px;
+	z-index: 100;
+	background: #fff;
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+	box-shadow: 0px 7px 18px -2px rgba(176, 226, 234, 0.32);
+
+	ul.tabs-properties {
+		background:rgba(221, 221, 221, 0.26);
+		display: flex;
+		li {
+			padding: 13px 15px;
+ 		    cursor: pointer;
+ 		    color: #848181;
+		    &.tabs-properties--selected {
+		    	background: #ffffff;
+		    	color: $color-primary;
+		    }
+		}
+	}
+
+	@include respond-to(handhelds) {
+		margin: 0 -15px;
+		ul.tabs-properties {
+			justify-content:space-between;
+			li {
+				font-size: 11px;
+				text-align: center;
+			}
+		}
+
+		.container-tab-content--selected {
+			max-height: 100vh;
+		}
+	}
+} 
+
 form.box-search {
 	width: 100%;
 	background: #ffffff;
 	border-radius: 4px;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -moz-flex;
-	display: -webkit-flex;
 	display: flex;
-	-webkit-flex-wrap: nowrap;
-  	flex-wrap: nowrap;
+	justify-content:center;
   	box-shadow: 0px 4px 17px -3px #3082a5;
+
 	.box-field {
 		padding: 8px 15px;
 		width: 100%;
@@ -47,20 +81,43 @@ form.box-search {
 		}
 	}
 
-	#searchRange { 
-		position: relative;
-		max-width: 280px;
- 		.box-range {
- 			padding-top: 8px;
-			display: -webkit-box;
-			display: -moz-box;
-			display: -ms-flexbox;
-			display: -moz-flex;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-flex-wrap: nowrap;
-		  	flex-wrap: nowrap;
-		  	div {
+	
+
+	@include respond-to(handhelds) {
+		flex-direction:column;
+		justify-content:flex-start;
+		text-align: left;
+		.box-field {
+			border-bottom: 1px solid #ddd;
+			padding: 15px;
+			
+			&:last-child {
+				max-width: 100%;
+				.btn-small {
+					margin: 0px 0px 10px;
+					width: 100%;
+					display: block;
+					padding: 15px !important;
+				}
+			}
+		}
+
+		#searchRange {
+			max-width: 100%;
+		}
+
+
+	}
+	 
+}
+
+#searchRange { 
+	position: relative;
+	max-width: 280px;
+		.box-range {
+			padding-top: 8px;
+ 			display: flex;
+ 		  	div {
 		  		width: 100%;
 		  		&.arrows {
 		  			max-width: 35px;
@@ -73,6 +130,4 @@ form.box-search {
 		  		}
 		  	}
 		}
-	}
-	 
 }
