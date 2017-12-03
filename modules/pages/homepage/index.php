@@ -572,22 +572,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    <div class="footer-properties">
-                        <label>8 dari 300 Activitas</label>
-                        <ul class="pagination">
-                            <li><a href=""><i class="zmdi zmdi-chevron-left"></i></a></li>
-                            <li><span class="current">1</span></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
-                            <li><a href="">5</a></li>
-                            <li><span class="more">...</span></li>
-                            <li><a href="">26</a></li>
-                            <li><a href=""><i class="zmdi zmdi-chevron-right"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+                 
             </div>
         </div>
     </section>
